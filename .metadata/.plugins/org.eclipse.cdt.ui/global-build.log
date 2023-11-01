@@ -212,3 +212,38 @@ arm-none-eabi-size   test1.elf
   11552	     20	   1716	  13288	   33e8	test1.elf
 Finished building: default.size.stdout
  
+10:47:40 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "week2_interupt.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\week2_interupt\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week2_interupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: week2_interupt.elf
+ 
+arm-none-eabi-size   week2_interupt.elf 
+arm-none-eabi-objdump -h -S  week2_interupt.elf  > "week2_interupt.list"
+   text	   data	    bss	    dec	    hex	filename
+  12004	     84	   1724	  13812	   35f4	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: week2_interupt.list
+ 
+10:47:44 **** Incremental Build of configuration Debug for project test1 ****
+make -j16 all 
+arm-none-eabi-size   test1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11552	     20	   1716	  13288	   33e8	test1.elf
+Finished building: default.size.stdout
+ 
+10:47:44 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-size   week2_interupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12004	     84	   1724	  13812	   35f4	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+10:47:52 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-size   week2_interupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12004	     84	   1724	  13812	   35f4	week2_interupt.elf
+Finished building: default.size.stdout
+ 
