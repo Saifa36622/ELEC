@@ -18,6 +18,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include <string.h>
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -69,6 +70,7 @@ int16_t real_in[] = {0,1,2,3,4,5,6,7,8,9,0};
 int16_t x = 0;
 int16_t count = 0;
 int16_t before = 0;
+int16_t i_str = 0;
 char *ans;
 /* USER CODE END PV */
 
@@ -140,13 +142,29 @@ int main(void)
 		  }
 		  if (ButtonState == array_map[i])
 		  {
+
 			  x = real_in[i];
+
 		  }
 
 	  }
 	  if (before != 0 && ButtonState == 0 )
 	  {
-	  		  count++;
+		  if (ans == NULL)
+		    {
+		        ans = (char*)malloc(2);
+		        ans[0] = x + '0';
+		        ans[1] = '\0';
+		    }
+		    else
+		    {
+		        int currentSize = strlen(ans);
+		        ans = (char*)realloc(ans, currentSize + 2);
+		        ans[currentSize] = x + '0';
+		        ans[currentSize + 1] = '\0';
+		    }
+		    count++;
+
 	  }
 
 

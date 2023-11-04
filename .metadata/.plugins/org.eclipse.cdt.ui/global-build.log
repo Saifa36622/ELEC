@@ -717,3 +717,829 @@ Finished building: default.size.stdout
  
 Finished building: week2_interupt.list
  
+17:27:14 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "week2_interupt.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\week2_interupt\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week2_interupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: week2_interupt.elf
+ 
+arm-none-eabi-size   week2_interupt.elf 
+arm-none-eabi-objdump -h -S  week2_interupt.elf  > "week2_interupt.list"
+   text	   data	    bss	    dec	    hex	filename
+  12188	    132	   1740	  14060	   36ec	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: week2_interupt.list
+ 
+17:32:58 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:150:27: error: invalid type argument of unary '*' (have 'int')
+  150 |                           *ans[i_str] = x + 48;
+      |                           ^~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+17:33:11 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "week2_interupt.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\week2_interupt\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week2_interupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: week2_interupt.elf
+ 
+arm-none-eabi-size   week2_interupt.elf 
+arm-none-eabi-objdump -h -S  week2_interupt.elf  > "week2_interupt.list"
+   text	   data	    bss	    dec	    hex	filename
+  12184	    132	   1740	  14056	   36e8	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: week2_interupt.list
+ 
+17:37:48 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:73:20: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+   73 | char ans = (char *)malloc(1);
+      |                    ^~~~~~
+../Core/Src/main.c:21:1: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+   20 | #include "main.h"
+  +++ |+#include <stdlib.h>
+   21 | 
+../Core/Src/main.c:73:20: warning: incompatible implicit declaration of built-in function 'malloc' [-Wbuiltin-declaration-mismatch]
+   73 | char ans = (char *)malloc(1);
+      |                    ^~~~~~
+../Core/Src/main.c:73:20: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+../Core/Src/main.c:73:12: warning: initialization of 'char' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+   73 | char ans = (char *)malloc(1);
+      |            ^
+../Core/Src/main.c:73:12: error: initializer element is not constant
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:152:22: error: subscripted value is neither array nor pointer nor vector
+  152 |                   ans[i_str++] = x + 48;
+      |                      ^
+../Core/Src/main.c:154:32: warning: implicit declaration of function 'realloc' [-Wimplicit-function-declaration]
+  154 |                   ans =(char *)realloc(ans,i_str+1);
+      |                                ^~~~~~~
+../Core/Src/main.c:154:32: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+../Core/Src/main.c:154:32: warning: incompatible implicit declaration of built-in function 'realloc' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:154:32: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+../Core/Src/main.c:154:40: warning: passing argument 1 of 'realloc' makes pointer from integer without a cast [-Wint-conversion]
+  154 |                   ans =(char *)realloc(ans,i_str+1);
+      |                                        ^~~
+      |                                        |
+      |                                        char
+../Core/Src/main.c:154:40: note: expected 'void *' but argument is of type 'char'
+../Core/Src/main.c:154:23: warning: assignment to 'char' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+  154 |                   ans =(char *)realloc(ans,i_str+1);
+      |                       ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+17:38:07 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:73:20: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+   73 | char ans = (char *)malloc(1);
+      |                    ^~~~~~
+../Core/Src/main.c:21:1: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+   20 | #include "main.h"
+  +++ |+#include <stdlib.h>
+   21 | 
+../Core/Src/main.c:73:20: warning: incompatible implicit declaration of built-in function 'malloc' [-Wbuiltin-declaration-mismatch]
+   73 | char ans = (char *)malloc(1);
+      |                    ^~~~~~
+../Core/Src/main.c:73:20: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+../Core/Src/main.c:73:12: warning: initialization of 'char' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+   73 | char ans = (char *)malloc(1);
+      |            ^
+../Core/Src/main.c:73:12: error: initializer element is not constant
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:152:22: error: subscripted value is neither array nor pointer nor vector
+  152 |                   ans[i_str++] = x + 48;
+      |                      ^
+../Core/Src/main.c:154:19: error: invalid type argument of unary '*' (have 'int')
+  154 |                   *ans = (char *)realloc(ans,i_str+1);
+      |                   ^~~~
+../Core/Src/main.c:154:34: warning: implicit declaration of function 'realloc' [-Wimplicit-function-declaration]
+  154 |                   *ans = (char *)realloc(ans,i_str+1);
+      |                                  ^~~~~~~
+../Core/Src/main.c:154:34: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+../Core/Src/main.c:154:34: warning: incompatible implicit declaration of built-in function 'realloc' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:154:34: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+../Core/Src/main.c:154:42: warning: passing argument 1 of 'realloc' makes pointer from integer without a cast [-Wint-conversion]
+  154 |                   *ans = (char *)realloc(ans,i_str+1);
+      |                                          ^~~
+      |                                          |
+      |                                          char
+../Core/Src/main.c:154:42: note: expected 'void *' but argument is of type 'char'
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+17:38:14 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:73:20: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+   73 | char ans = (char *)malloc(1);
+      |                    ^~~~~~
+../Core/Src/main.c:21:1: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+   20 | #include "main.h"
+  +++ |+#include <stdlib.h>
+   21 | 
+../Core/Src/main.c:73:20: warning: incompatible implicit declaration of built-in function 'malloc' [-Wbuiltin-declaration-mismatch]
+   73 | char ans = (char *)malloc(1);
+      |                    ^~~~~~
+../Core/Src/main.c:73:20: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+../Core/Src/main.c:73:12: warning: initialization of 'char' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+   73 | char ans = (char *)malloc(1);
+      |            ^
+../Core/Src/main.c:73:12: error: initializer element is not constant
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:152:22: error: subscripted value is neither array nor pointer nor vector
+  152 |                   ans[i_str++] = x + 48;
+      |                      ^
+../Core/Src/main.c:154:19: error: invalid type argument of unary '*' (have 'int')
+  154 |                   *ans = (char *)realloc(*ans,i_str+1);
+      |                   ^~~~
+../Core/Src/main.c:154:34: warning: implicit declaration of function 'realloc' [-Wimplicit-function-declaration]
+  154 |                   *ans = (char *)realloc(*ans,i_str+1);
+      |                                  ^~~~~~~
+../Core/Src/main.c:154:34: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+../Core/Src/main.c:154:34: warning: incompatible implicit declaration of built-in function 'realloc' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:154:34: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+../Core/Src/main.c:154:42: error: invalid type argument of unary '*' (have 'int')
+  154 |                   *ans = (char *)realloc(*ans,i_str+1);
+      |                                          ^~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+17:38:23 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:73:20: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+   73 | char ans = (char *)malloc(1);
+      |                    ^~~~~~
+../Core/Src/main.c:21:1: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+   20 | #include "main.h"
+  +++ |+#include <stdlib.h>
+   21 | 
+../Core/Src/main.c:73:20: warning: incompatible implicit declaration of built-in function 'malloc' [-Wbuiltin-declaration-mismatch]
+   73 | char ans = (char *)malloc(1);
+      |                    ^~~~~~
+../Core/Src/main.c:73:20: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+../Core/Src/main.c:73:12: warning: initialization of 'char' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+   73 | char ans = (char *)malloc(1);
+      |            ^
+../Core/Src/main.c:73:12: error: initializer element is not constant
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:152:22: error: subscripted value is neither array nor pointer nor vector
+  152 |                   ans[i_str++] = x + 48;
+      |                      ^
+../Core/Src/main.c:154:33: warning: implicit declaration of function 'realloc' [-Wimplicit-function-declaration]
+  154 |                   ans = (char *)realloc(*ans,i_str+1);
+      |                                 ^~~~~~~
+../Core/Src/main.c:154:33: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+../Core/Src/main.c:154:33: warning: incompatible implicit declaration of built-in function 'realloc' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:154:33: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+../Core/Src/main.c:154:41: error: invalid type argument of unary '*' (have 'int')
+  154 |                   ans = (char *)realloc(*ans,i_str+1);
+      |                                         ^~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+17:38:38 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:73:20: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+   73 | char ans = (char *)malloc(1);
+      |                    ^~~~~~
+../Core/Src/main.c:21:1: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+   20 | #include "main.h"
+  +++ |+#include <stdlib.h>
+   21 | 
+../Core/Src/main.c:73:20: warning: incompatible implicit declaration of built-in function 'malloc' [-Wbuiltin-declaration-mismatch]
+   73 | char ans = (char *)malloc(1);
+      |                    ^~~~~~
+../Core/Src/main.c:73:20: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+../Core/Src/main.c:73:12: warning: initialization of 'char' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+   73 | char ans = (char *)malloc(1);
+      |            ^
+../Core/Src/main.c:73:12: error: initializer element is not constant
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:152:22: error: subscripted value is neither array nor pointer nor vector
+  152 |                   ans[i_str++] = x + 48;
+      |                      ^
+../Core/Src/main.c:154:19: error: invalid type argument of unary '*' (have 'int')
+  154 |                   *ans = (char *)realloc(ans,i_str+1);
+      |                   ^~~~
+../Core/Src/main.c:154:34: warning: implicit declaration of function 'realloc' [-Wimplicit-function-declaration]
+  154 |                   *ans = (char *)realloc(ans,i_str+1);
+      |                                  ^~~~~~~
+../Core/Src/main.c:154:34: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+../Core/Src/main.c:154:34: warning: incompatible implicit declaration of built-in function 'realloc' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:154:34: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+../Core/Src/main.c:154:42: warning: passing argument 1 of 'realloc' makes pointer from integer without a cast [-Wint-conversion]
+  154 |                   *ans = (char *)realloc(ans,i_str+1);
+      |                                          ^~~
+      |                                          |
+      |                                          char
+../Core/Src/main.c:154:42: note: expected 'void *' but argument is of type 'char'
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+17:39:59 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:73:20: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+   73 | char ans = (char *)malloc(1);
+      |                    ^~~~~~
+../Core/Src/main.c:21:1: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+   20 | #include "main.h"
+  +++ |+#include <stdlib.h>
+   21 | 
+../Core/Src/main.c:73:20: warning: incompatible implicit declaration of built-in function 'malloc' [-Wbuiltin-declaration-mismatch]
+   73 | char ans = (char *)malloc(1);
+      |                    ^~~~~~
+../Core/Src/main.c:73:20: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+../Core/Src/main.c:73:12: warning: initialization of 'char' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+   73 | char ans = (char *)malloc(1);
+      |            ^
+../Core/Src/main.c:73:12: error: initializer element is not constant
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:152:22: error: subscripted value is neither array nor pointer nor vector
+  152 |                   ans[i_str++] = x + 48;
+      |                      ^
+../Core/Src/main.c:154:40: warning: implicit declaration of function 'realloc' [-Wimplicit-function-declaration]
+  154 |                   char *temp = (char *)realloc(ans,i_str+1);
+      |                                        ^~~~~~~
+../Core/Src/main.c:154:40: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+../Core/Src/main.c:154:40: warning: incompatible implicit declaration of built-in function 'realloc' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:154:40: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+../Core/Src/main.c:154:48: warning: passing argument 1 of 'realloc' makes pointer from integer without a cast [-Wint-conversion]
+  154 |                   char *temp = (char *)realloc(ans,i_str+1);
+      |                                                ^~~
+      |                                                |
+      |                                                char
+../Core/Src/main.c:154:48: note: expected 'void *' but argument is of type 'char'
+../Core/Src/main.c:155:23: warning: assignment to 'char' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+  155 |                   ans = temp;
+      |                       ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+17:40:31 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:154:40: warning: implicit declaration of function 'realloc' [-Wimplicit-function-declaration]
+  154 |                   char *temp = (char *)realloc(ans,i_str+1);
+      |                                        ^~~~~~~
+../Core/Src/main.c:21:1: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+   20 | #include "main.h"
+  +++ |+#include <stdlib.h>
+   21 | 
+../Core/Src/main.c:154:40: warning: incompatible implicit declaration of built-in function 'realloc' [-Wbuiltin-declaration-mismatch]
+  154 |                   char *temp = (char *)realloc(ans,i_str+1);
+      |                                        ^~~~~~~
+../Core/Src/main.c:154:40: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+arm-none-eabi-gcc -o "week2_interupt.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\week2_interupt\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week2_interupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: week2_interupt.elf
+ 
+arm-none-eabi-size   week2_interupt.elf 
+arm-none-eabi-objdump -h -S  week2_interupt.elf  > "week2_interupt.list"
+   text	   data	    bss	    dec	    hex	filename
+  13020	    212	   2068	  15300	   3bc4	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: week2_interupt.list
+ 
+17:41:19 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:154:40: warning: implicit declaration of function 'realloc' [-Wimplicit-function-declaration]
+  154 |                   char *temp = (char *)realloc(ans,i_str+1);
+      |                                        ^~~~~~~
+../Core/Src/main.c:21:1: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+   20 | #include "main.h"
+  +++ |+#include <stdlib.h>
+   21 | 
+../Core/Src/main.c:154:40: warning: incompatible implicit declaration of built-in function 'realloc' [-Wbuiltin-declaration-mismatch]
+  154 |                   char *temp = (char *)realloc(ans,i_str+1);
+      |                                        ^~~~~~~
+../Core/Src/main.c:154:40: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+arm-none-eabi-gcc -o "week2_interupt.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\week2_interupt\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week2_interupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: week2_interupt.elf
+ 
+arm-none-eabi-size   week2_interupt.elf 
+arm-none-eabi-objdump -h -S  week2_interupt.elf  > "week2_interupt.list"
+   text	   data	    bss	    dec	    hex	filename
+  13016	    212	   2068	  15296	   3bc0	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: week2_interupt.list
+ 
+17:43:13 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "week2_interupt.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\week2_interupt\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week2_interupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: week2_interupt.elf
+ 
+arm-none-eabi-size   week2_interupt.elf 
+arm-none-eabi-objdump -h -S  week2_interupt.elf  > "week2_interupt.list"
+   text	   data	    bss	    dec	    hex	filename
+  12176	    132	   1732	  14040	   36d8	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: week2_interupt.list
+ 
+17:44:14 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "week2_interupt.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\week2_interupt\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week2_interupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: week2_interupt.elf
+ 
+arm-none-eabi-size   week2_interupt.elf 
+arm-none-eabi-objdump -h -S  week2_interupt.elf  > "week2_interupt.list"
+   text	   data	    bss	    dec	    hex	filename
+  12192	    132	   1732	  14056	   36e8	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: week2_interupt.list
+ 
+17:45:25 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "week2_interupt.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\week2_interupt\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week2_interupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: week2_interupt.elf
+ 
+arm-none-eabi-size   week2_interupt.elf 
+arm-none-eabi-objdump -h -S  week2_interupt.elf  > "week2_interupt.list"
+   text	   data	    bss	    dec	    hex	filename
+  12192	    132	   1732	  14056	   36e8	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: week2_interupt.list
+ 
+17:45:42 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-size   week2_interupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12192	    132	   1732	  14056	   36e8	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+17:46:09 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-size   week2_interupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12192	    132	   1732	  14056	   36e8	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+17:46:41 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-size   week2_interupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12192	    132	   1732	  14056	   36e8	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+17:47:10 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-size   week2_interupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12192	    132	   1732	  14056	   36e8	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+17:47:35 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "week2_interupt.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\week2_interupt\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week2_interupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: week2_interupt.elf
+ 
+arm-none-eabi-size   week2_interupt.elf 
+arm-none-eabi-objdump -h -S  week2_interupt.elf  > "week2_interupt.list"
+   text	   data	    bss	    dec	    hex	filename
+  12248	    132	   1744	  14124	   372c	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: week2_interupt.list
+ 
+17:47:47 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-size   week2_interupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12248	    132	   1744	  14124	   372c	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+17:49:31 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:73:12: error: empty character constant
+   73 | char ans = '';
+      |            ^~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:153:36: error: expected ';' before 'count'
+  153 |                   ans = ans +(x+48)
+      |                                    ^
+      |                                    ;
+  154 |                   count++;
+      |                   ~~~~~             
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+17:49:38 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:73:12: error: empty character constant
+   73 | char ans = '';
+      |            ^~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+17:49:53 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "week2_interupt.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\week2_interupt\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week2_interupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: week2_interupt.elf
+ 
+arm-none-eabi-size   week2_interupt.elf 
+arm-none-eabi-objdump -h -S  week2_interupt.elf  > "week2_interupt.list"
+   text	   data	    bss	    dec	    hex	filename
+  12164	    132	   1732	  14028	   36cc	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: week2_interupt.list
+ 
+17:50:40 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "week2_interupt.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\week2_interupt\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week2_interupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: week2_interupt.elf
+ 
+arm-none-eabi-size   week2_interupt.elf 
+arm-none-eabi-objdump -h -S  week2_interupt.elf  > "week2_interupt.list"
+   text	   data	    bss	    dec	    hex	filename
+  12160	    132	   1732	  14024	   36c8	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: week2_interupt.list
+ 
+17:52:20 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:153:25: warning: implicit declaration of function 'strcat' [-Wimplicit-function-declaration]
+  153 |                   ans = strcat(ans,x+48)
+      |                         ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'strcat'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:153:25: warning: incompatible implicit declaration of built-in function 'strcat' [-Wbuiltin-declaration-mismatch]
+  153 |                   ans = strcat(ans,x+48)
+      |                         ^~~~~~
+../Core/Src/main.c:153:25: note: include '<string.h>' or provide a declaration of 'strcat'
+../Core/Src/main.c:153:32: warning: passing argument 1 of 'strcat' makes pointer from integer without a cast [-Wint-conversion]
+  153 |                   ans = strcat(ans,x+48)
+      |                                ^~~
+      |                                |
+      |                                char
+../Core/Src/main.c:153:32: note: expected 'char *' but argument is of type 'char'
+../Core/Src/main.c:153:37: warning: passing argument 2 of 'strcat' makes pointer from integer without a cast [-Wint-conversion]
+  153 |                   ans = strcat(ans,x+48)
+      |                                    ~^~~
+      |                                     |
+      |                                     int
+../Core/Src/main.c:153:37: note: expected 'const char *' but argument is of type 'int'
+../Core/Src/main.c:153:23: warning: assignment to 'char' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+  153 |                   ans = strcat(ans,x+48)
+      |                       ^
+../Core/Src/main.c:153:41: error: expected ';' before 'count'
+  153 |                   ans = strcat(ans,x+48)
+      |                                         ^
+      |                                         ;
+  154 |                   count++;
+      |                   ~~~~~                  
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+17:52:26 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:153:25: warning: implicit declaration of function 'strcat' [-Wimplicit-function-declaration]
+  153 |                   ans = strcat(ans,x+48);
+      |                         ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'strcat'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:153:25: warning: incompatible implicit declaration of built-in function 'strcat' [-Wbuiltin-declaration-mismatch]
+  153 |                   ans = strcat(ans,x+48);
+      |                         ^~~~~~
+../Core/Src/main.c:153:25: note: include '<string.h>' or provide a declaration of 'strcat'
+../Core/Src/main.c:153:32: warning: passing argument 1 of 'strcat' makes pointer from integer without a cast [-Wint-conversion]
+  153 |                   ans = strcat(ans,x+48);
+      |                                ^~~
+      |                                |
+      |                                char
+../Core/Src/main.c:153:32: note: expected 'char *' but argument is of type 'char'
+../Core/Src/main.c:153:37: warning: passing argument 2 of 'strcat' makes pointer from integer without a cast [-Wint-conversion]
+  153 |                   ans = strcat(ans,x+48);
+      |                                    ~^~~
+      |                                     |
+      |                                     int
+../Core/Src/main.c:153:37: note: expected 'const char *' but argument is of type 'int'
+../Core/Src/main.c:153:23: warning: assignment to 'char' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+  153 |                   ans = strcat(ans,x+48);
+      |                       ^
+arm-none-eabi-gcc -o "week2_interupt.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\week2_interupt\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week2_interupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: week2_interupt.elf
+ 
+arm-none-eabi-size   week2_interupt.elf 
+arm-none-eabi-objdump -h -S  week2_interupt.elf  > "week2_interupt.list"
+   text	   data	    bss	    dec	    hex	filename
+  12204	    132	   1732	  14068	   36f4	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: week2_interupt.list
+ 
+17:53:15 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:153:25: warning: implicit declaration of function 'strcat' [-Wimplicit-function-declaration]
+  153 |                   ans = strcat(ans,x+48);
+      |                         ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'strcat'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:153:25: warning: incompatible implicit declaration of built-in function 'strcat' [-Wbuiltin-declaration-mismatch]
+  153 |                   ans = strcat(ans,x+48);
+      |                         ^~~~~~
+../Core/Src/main.c:153:25: note: include '<string.h>' or provide a declaration of 'strcat'
+../Core/Src/main.c:153:37: warning: passing argument 2 of 'strcat' makes pointer from integer without a cast [-Wint-conversion]
+  153 |                   ans = strcat(ans,x+48);
+      |                                    ~^~~
+      |                                     |
+      |                                     int
+../Core/Src/main.c:153:37: note: expected 'const char *' but argument is of type 'int'
+arm-none-eabi-gcc -o "week2_interupt.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\week2_interupt\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week2_interupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: week2_interupt.elf
+ 
+arm-none-eabi-size   week2_interupt.elf 
+arm-none-eabi-objdump -h -S  week2_interupt.elf  > "week2_interupt.list"
+   text	   data	    bss	    dec	    hex	filename
+  12200	    132	   1732	  14064	   36f0	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: week2_interupt.list
+ 
+17:54:17 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:73:6: error: size of array 'ans' is too large
+   73 | char ans[100000000000];
+      |      ^~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:153:25: warning: implicit declaration of function 'strcat' [-Wimplicit-function-declaration]
+  153 |                   ans = strcat(ans,x+48);
+      |                         ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'strcat'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:153:25: warning: incompatible implicit declaration of built-in function 'strcat' [-Wbuiltin-declaration-mismatch]
+  153 |                   ans = strcat(ans,x+48);
+      |                         ^~~~~~
+../Core/Src/main.c:153:25: note: include '<string.h>' or provide a declaration of 'strcat'
+../Core/Src/main.c:153:37: warning: passing argument 2 of 'strcat' makes pointer from integer without a cast [-Wint-conversion]
+  153 |                   ans = strcat(ans,x+48);
+      |                                    ~^~~
+      |                                     |
+      |                                     int
+../Core/Src/main.c:153:37: note: expected 'const char *' but argument is of type 'int'
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+17:54:53 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:73:6: error: size of array 'ans' is too large
+   73 | char ans[100000000000];
+      |      ^~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:152:19: error: 'temp' undeclared (first use in this function)
+  152 |                   temp = '';
+      |                   ^~~~
+../Core/Src/main.c:152:19: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:152:26: error: empty character constant
+  152 |                   temp = '';
+      |                          ^~
+../Core/Src/main.c:154:25: warning: implicit declaration of function 'strcat' [-Wimplicit-function-declaration]
+  154 |                   ans = strcat(ans,temp);
+      |                         ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'strcat'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:154:25: warning: incompatible implicit declaration of built-in function 'strcat' [-Wbuiltin-declaration-mismatch]
+  154 |                   ans = strcat(ans,temp);
+      |                         ^~~~~~
+../Core/Src/main.c:154:25: note: include '<string.h>' or provide a declaration of 'strcat'
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+17:55:16 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:74:6: error: size of array 'ans' is too large
+   74 | char ans[100000000000];
+      |      ^~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:153:19: error: 'temp' undeclared (first use in this function)
+  153 |                   temp = '';
+      |                   ^~~~
+../Core/Src/main.c:153:19: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:153:26: error: empty character constant
+  153 |                   temp = '';
+      |                          ^~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+17:55:43 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:74:6: error: size of array 'ans' is too large
+   74 | char ans[100000000000];
+      |      ^~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:155:36: warning: passing argument 2 of 'strcat' makes pointer from integer without a cast [-Wint-conversion]
+  155 |                   ans = strcat(ans,temp);
+      |                                    ^~~~
+      |                                    |
+      |                                    char
+In file included from ../Core/Src/main.c:21:
+E:\stm cube\STM32CubeIDE_1.13.2\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.1.202309131626\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/string.h:34:36: note: expected 'const char * restrict' but argument is of type 'char'
+   34 | char    *strcat (char *__restrict, const char *__restrict);
+      |                                    ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+17:55:55 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:74:6: error: size of array 'ans' is too large
+   74 | char ans[100000000000];
+      |      ^~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:154:32: warning: initialization of 'char *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  154 |                   char *temp = x +48;
+      |                                ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+17:56:29 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:74:6: error: size of array 'ans' is too large
+   74 | char ans[100000000000];
+      |      ^~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:154:32: warning: initialization of 'char *' from 'char' makes pointer from integer without a cast [-Wint-conversion]
+  154 |                   char *temp = temp2;
+      |                                ^~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+17:57:59 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:74:6: error: size of array 'ans' is too large
+   74 | char ans[100000000000];
+      |      ^~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:154:33: error: invalid initializer
+  154 |                   char temp[] = temp2;
+      |                                 ^~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+17:58:22 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:154:33: error: invalid initializer
+  154 |                   char temp[] = temp2;
+      |                                 ^~~~~
+../Core/Src/main.c:155:23: error: assignment to expression with array type
+  155 |                   ans = strcat(ans,temp);
+      |                       ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+17:59:29 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:153:19: error: 'temp' undeclared (first use in this function)
+  153 |                   temp = (char)x+48;
+      |                   ^~~~
+../Core/Src/main.c:153:19: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+17:59:36 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:154:36: warning: passing argument 2 of 'strcat' makes pointer from integer without a cast [-Wint-conversion]
+  154 |                   ans = strcat(ans,temp);
+      |                                    ^~~~
+      |                                    |
+      |                                    char
+In file included from ../Core/Src/main.c:21:
+E:\stm cube\STM32CubeIDE_1.13.2\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.1.202309131626\tools\bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/include/string.h:34:36: note: expected 'const char * restrict' but argument is of type 'char'
+   34 | char    *strcat (char *__restrict, const char *__restrict);
+      |                                    ^
+../Core/Src/main.c:154:23: error: assignment to expression with array type
+  154 |                   ans = strcat(ans,temp);
+      |                       ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+17:59:56 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:154:23: error: assignment to expression with array type
+  154 |                   ans = strcat(ans,temp);
+      |                       ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+18:00:51 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:153:32: warning: initialization of 'char *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  153 |                   char *temp = (char)x+48;
+      |                                ^
+../Core/Src/main.c:154:23: error: assignment to expression with array type
+  154 |                   ans = strcat(ans,temp);
+      |                       ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+18:01:04 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:153:32: warning: initialization of 'char *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  153 |                   char *temp = (char)x+48;
+      |                                ^
+arm-none-eabi-gcc -o "week2_interupt.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\week2_interupt\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week2_interupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: week2_interupt.elf
+ 
+arm-none-eabi-size   week2_interupt.elf 
+arm-none-eabi-objdump -h -S  week2_interupt.elf  > "week2_interupt.list"
+   text	   data	    bss	    dec	    hex	filename
+  12204	    132	   1732	  14068	   36f4	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: week2_interupt.list
+ 
+18:01:38 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:153:32: warning: initialization of 'char *' from 'char' makes pointer from integer without a cast [-Wint-conversion]
+  153 |                   char *temp = (char)(x+48);
+      |                                ^
+arm-none-eabi-gcc -o "week2_interupt.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\week2_interupt\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week2_interupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: week2_interupt.elf
+ 
+arm-none-eabi-size   week2_interupt.elf 
+arm-none-eabi-objdump -h -S  week2_interupt.elf  > "week2_interupt.list"
+   text	   data	    bss	    dec	    hex	filename
+  12204	    132	   1732	  14068	   36f4	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: week2_interupt.list
+ 
+18:03:40 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:155:38: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  155 |                         ans = (char*)malloc(2);
+      |                                      ^~~~~~
+../Core/Src/main.c:22:1: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+   21 | #include <string.h>
+  +++ |+#include <stdlib.h>
+   22 | 
+../Core/Src/main.c:155:38: warning: incompatible implicit declaration of built-in function 'malloc' [-Wbuiltin-declaration-mismatch]
+  155 |                         ans = (char*)malloc(2);
+      |                                      ^~~~~~
+../Core/Src/main.c:155:38: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+../Core/Src/main.c:162:38: warning: implicit declaration of function 'realloc' [-Wimplicit-function-declaration]
+  162 |                         ans = (char*)realloc(ans, currentSize + 2);
+      |                                      ^~~~~~~
+../Core/Src/main.c:162:38: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+../Core/Src/main.c:162:38: warning: incompatible implicit declaration of built-in function 'realloc' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:162:38: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+arm-none-eabi-gcc -o "week2_interupt.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\week2_interupt\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week2_interupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: week2_interupt.elf
+ 
+arm-none-eabi-size   week2_interupt.elf 
+arm-none-eabi-objdump -h -S  week2_interupt.elf  > "week2_interupt.list"
+   text	   data	    bss	    dec	    hex	filename
+  13104	    212	   2068	  15384	   3c18	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: week2_interupt.list
+ 
+18:04:25 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-size   week2_interupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13104	    212	   2068	  15384	   3c18	week2_interupt.elf
+Finished building: default.size.stdout
+ 
