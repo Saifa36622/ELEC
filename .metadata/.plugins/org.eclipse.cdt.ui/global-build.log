@@ -247,3 +247,346 @@ arm-none-eabi-size   week2_interupt.elf
   12004	     84	   1724	  13812	   35f4	week2_interupt.elf
 Finished building: default.size.stdout
  
+15:31:40 **** Incremental Build of configuration Debug for project test1 ****
+make -j16 all 
+arm-none-eabi-size   test1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11552	     20	   1716	  13288	   33e8	test1.elf
+Finished building: default.size.stdout
+ 
+15:32:23 **** Incremental Build of configuration Debug for project test1 ****
+make -j16 all 
+arm-none-eabi-size   test1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11552	     20	   1716	  13288	   33e8	test1.elf
+Finished building: default.size.stdout
+ 
+15:32:48 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-size   week2_interupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12004	     84	   1724	  13812	   35f4	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+15:37:13 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32g4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32g4xx_hal_msp.d" -MT"Core/Src/stm32g4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32g4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32g4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32g4xx_it.d" -MT"Core/Src/stm32g4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32g4xx_it.o"
+arm-none-eabi-gcc -o "week2_interupt.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\week2_interupt\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week2_interupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: week2_interupt.elf
+ 
+arm-none-eabi-size   week2_interupt.elf 
+arm-none-eabi-objdump -h -S  week2_interupt.elf  > "week2_interupt.list"
+   text	   data	    bss	    dec	    hex	filename
+  12004	     84	   1724	  13812	   35f4	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: week2_interupt.list
+ 
+15:37:33 **** Incremental Build of configuration Debug for project test1 ****
+make -j16 all 
+arm-none-eabi-size   test1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11552	     20	   1716	  13288	   33e8	test1.elf
+Finished building: default.size.stdout
+ 
+15:39:05 **** Incremental Build of configuration Debug for project test1 ****
+make -j16 all 
+arm-none-eabi-size   test1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11552	     20	   1716	  13288	   33e8	test1.elf
+Finished building: default.size.stdout
+ 
+15:41:40 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-size   week2_interupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12004	     84	   1724	  13812	   35f4	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+15:41:55 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-size   week2_interupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12004	     84	   1724	  13812	   35f4	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+15:43:20 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-size   week2_interupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12004	     84	   1724	  13812	   35f4	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+15:46:49 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:127:11: error: 'x' undeclared (first use in this function)
+  127 |           x = Buttonstate;
+      |           ^
+../Core/Src/main.c:127:11: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:127:15: error: 'Buttonstate' undeclared (first use in this function); did you mean 'ButtonState'?
+  127 |           x = Buttonstate;
+      |               ^~~~~~~~~~~
+      |               ButtonState
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+15:47:05 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:126:11: error: 'x' undeclared (first use in this function)
+  126 |           x = ButtonMatrixRead();
+      |           ^
+../Core/Src/main.c:126:11: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+15:48:13 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "week2_interupt.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\week2_interupt\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week2_interupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: week2_interupt.elf
+ 
+arm-none-eabi-size   week2_interupt.elf 
+arm-none-eabi-objdump -h -S  week2_interupt.elf  > "week2_interupt.list"
+   text	   data	    bss	    dec	    hex	filename
+  12024	     84	   1724	  13832	   3608	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: week2_interupt.list
+ 
+15:48:44 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-size   week2_interupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12024	     84	   1724	  13832	   3608	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+15:51:58 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "week2_interupt.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\week2_interupt\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week2_interupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: week2_interupt.elf
+ 
+arm-none-eabi-size   week2_interupt.elf 
+arm-none-eabi-objdump -h -S  week2_interupt.elf  > "week2_interupt.list"
+   text	   data	    bss	    dec	    hex	filename
+  12024	    104	   1728	  13856	   3620	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: week2_interupt.list
+ 
+15:58:07 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "week2_interupt.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\week2_interupt\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week2_interupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: week2_interupt.elf
+ 
+arm-none-eabi-size   week2_interupt.elf 
+arm-none-eabi-objdump -h -S  week2_interupt.elf  > "week2_interupt.list"
+   text	   data	    bss	    dec	    hex	filename
+  12076	    124	   1724	  13924	   3664	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: week2_interupt.list
+ 
+16:00:00 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "week2_interupt.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\week2_interupt\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week2_interupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: week2_interupt.elf
+ 
+arm-none-eabi-size   week2_interupt.elf 
+arm-none-eabi-objdump -h -S  week2_interupt.elf  > "week2_interupt.list"
+   text	   data	    bss	    dec	    hex	filename
+  12004	     84	   1724	  13812	   35f4	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: week2_interupt.list
+ 
+16:14:41 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:198:13: error: invalid storage class for function 'MX_LPUART1_UART_Init'
+  198 | static void MX_LPUART1_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:245:13: error: invalid storage class for function 'MX_GPIO_Init'
+  245 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:362:1: error: expected declaration or statement at end of input
+  362 | }
+      | ^
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:74:13: warning: 'MX_GPIO_Init' used but never defined
+   74 | static void MX_GPIO_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:75:13: warning: 'MX_LPUART1_UART_Init' used but never defined
+   75 | static void MX_LPUART1_UART_Init(void);
+      |             ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:353:6: warning: 'Error_Handler' defined but not used [-Wunused-function]
+  353 | void Error_Handler(void)
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c:327:6: warning: 'ButtonMatrixRead' defined but not used [-Wunused-function]
+  327 | void ButtonMatrixRead(){
+      |      ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:320:6: warning: 'HAL_GPIO_EXTI_Callback' defined but not used [-Wunused-function]
+  320 | void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+      |      ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:245:13: warning: 'MX_GPIO_Init' defined but not used [-Wunused-function]
+  245 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:198:13: warning: 'MX_LPUART1_UART_Init' defined but not used [-Wunused-function]
+  198 | static void MX_LPUART1_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:151:6: warning: 'SystemClock_Config' defined but not used [-Wunused-function]
+  151 | void SystemClock_Config(void)
+      |      ^~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+16:14:57 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:198:13: error: invalid storage class for function 'MX_LPUART1_UART_Init'
+  198 | static void MX_LPUART1_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:245:13: error: invalid storage class for function 'MX_GPIO_Init'
+  245 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:362:1: error: expected declaration or statement at end of input
+  362 | }
+      | ^
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:74:13: warning: 'MX_GPIO_Init' used but never defined
+   74 | static void MX_GPIO_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:75:13: warning: 'MX_LPUART1_UART_Init' used but never defined
+   75 | static void MX_LPUART1_UART_Init(void);
+      |             ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:353:6: warning: 'Error_Handler' defined but not used [-Wunused-function]
+  353 | void Error_Handler(void)
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c:327:6: warning: 'ButtonMatrixRead' defined but not used [-Wunused-function]
+  327 | void ButtonMatrixRead(){
+      |      ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:320:6: warning: 'HAL_GPIO_EXTI_Callback' defined but not used [-Wunused-function]
+  320 | void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+      |      ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:245:13: warning: 'MX_GPIO_Init' defined but not used [-Wunused-function]
+  245 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:198:13: warning: 'MX_LPUART1_UART_Init' defined but not used [-Wunused-function]
+  198 | static void MX_LPUART1_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:151:6: warning: 'SystemClock_Config' defined but not used [-Wunused-function]
+  151 | void SystemClock_Config(void)
+      |      ^~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+16:15:03 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:198:13: error: invalid storage class for function 'MX_LPUART1_UART_Init'
+  198 | static void MX_LPUART1_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:245:13: error: invalid storage class for function 'MX_GPIO_Init'
+  245 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:362:1: error: expected declaration or statement at end of input
+  362 | }
+      | ^
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:74:13: warning: 'MX_GPIO_Init' used but never defined
+   74 | static void MX_GPIO_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:75:13: warning: 'MX_LPUART1_UART_Init' used but never defined
+   75 | static void MX_LPUART1_UART_Init(void);
+      |             ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:353:6: warning: 'Error_Handler' defined but not used [-Wunused-function]
+  353 | void Error_Handler(void)
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c:327:6: warning: 'ButtonMatrixRead' defined but not used [-Wunused-function]
+  327 | void ButtonMatrixRead(){
+      |      ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:320:6: warning: 'HAL_GPIO_EXTI_Callback' defined but not used [-Wunused-function]
+  320 | void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+      |      ^~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:245:13: warning: 'MX_GPIO_Init' defined but not used [-Wunused-function]
+  245 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:198:13: warning: 'MX_LPUART1_UART_Init' defined but not used [-Wunused-function]
+  198 | static void MX_LPUART1_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:151:6: warning: 'SystemClock_Config' defined but not used [-Wunused-function]
+  151 | void SystemClock_Config(void)
+      |      ^~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+16:15:19 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "week2_interupt.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\week2_interupt\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week2_interupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: week2_interupt.elf
+ 
+arm-none-eabi-size   week2_interupt.elf 
+arm-none-eabi-objdump -h -S  week2_interupt.elf  > "week2_interupt.list"
+   text	   data	    bss	    dec	    hex	filename
+  12084	    124	   1724	  13932	   366c	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: week2_interupt.list
+ 
+16:17:10 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:67:56: warning: excess elements in array initializer
+   67 | int16_t array_map[10] = {0,1,16,256,2,32,512,4,64,1024,8};
+      |                                                        ^
+../Core/Src/main.c:67:56: note: (near initialization for 'array_map')
+../Core/Src/main.c:68:44: warning: excess elements in array initializer
+   68 | int16_t real_in[10] = {0,1,2,3,4,5,6,7,8,9,0};
+      |                                            ^
+../Core/Src/main.c:68:44: note: (near initialization for 'real_in')
+arm-none-eabi-gcc -o "week2_interupt.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\week2_interupt\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week2_interupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: week2_interupt.elf
+ 
+arm-none-eabi-size   week2_interupt.elf 
+arm-none-eabi-objdump -h -S  week2_interupt.elf  > "week2_interupt.list"
+   text	   data	    bss	    dec	    hex	filename
+  12084	    124	   1724	  13932	   366c	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: week2_interupt.list
+ 
+16:17:31 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "week2_interupt.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\week2_interupt\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week2_interupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: week2_interupt.elf
+ 
+arm-none-eabi-size   week2_interupt.elf 
+arm-none-eabi-objdump -h -S  week2_interupt.elf  > "week2_interupt.list"
+   text	   data	    bss	    dec	    hex	filename
+  12084	    132	   1724	  13940	   3674	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: week2_interupt.list
+ 
+16:18:33 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "week2_interupt.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\week2_interupt\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week2_interupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: week2_interupt.elf
+ 
+arm-none-eabi-size   week2_interupt.elf 
+arm-none-eabi-objdump -h -S  week2_interupt.elf  > "week2_interupt.list"
+   text	   data	    bss	    dec	    hex	filename
+  12084	    132	   1724	  13940	   3674	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: week2_interupt.list
+ 

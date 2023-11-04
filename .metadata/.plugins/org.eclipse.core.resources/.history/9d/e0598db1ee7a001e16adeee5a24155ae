@@ -64,9 +64,6 @@ struct _ButMtx_Struct BMX_R[4] = {
 };
 
 uint16_t ButtonState = 0;
-int16_t array_map[] = {0,1,16,256,2,32,512,4,64,1024,8};
-int16_t real_in[] = {0,1,2,3,4,5,6,7,8,9,0};
-int16_t x = 0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -128,19 +125,6 @@ int main(void)
 	  BTMX_TimeStamp = HAL_GetTick() + 25; //next scan in 25 ms
 	  ButtonMatrixRead();
 	  }
-	  for (int i = 0;i <= 10;i++)
-	  {
-		  if (ButtonState == 0)
-		  {
-			  continue;
-		  }
-		  if (ButtonState == array_map[i])
-		  {
-			  x = real_in[i];
-		  }
-	  }
-
-//	  }
   }
   /* USER CODE END 3 */
 }
@@ -330,7 +314,7 @@ static uint8_t X=0;
 for(int i=0; i<4; i++)
 {
 if(HAL_GPIO_ReadPin(BMX_L[i].Port, BMX_L[i].Pin) == GPIO_PIN_RESET)
-{ //ปุ่มถู�?�?ด
+{ //ปุ่มถู�?�?ด
 ButtonState |= 1 << (i + (X * 4));
 }
 else

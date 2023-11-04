@@ -128,7 +128,7 @@ int main(void)
 	  BTMX_TimeStamp = HAL_GetTick() + 25; //next scan in 25 ms
 	  ButtonMatrixRead();
 	  }
-	  for (int i = 0;i <= 10;i++)
+	  for (int i = 0;i <= 9;i++)
 	  {
 		  if (ButtonState == 0)
 		  {
