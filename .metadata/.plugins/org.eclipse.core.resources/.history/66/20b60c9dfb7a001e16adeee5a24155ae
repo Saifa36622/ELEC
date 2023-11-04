@@ -144,9 +144,9 @@ int main(void)
 		  }
 
 	  }
-	  if (before != 0 && ButtonState == 0 )
-	  {
-	  		  count++;
+	  if (before != 0 && ButtonState == 0 ){
+		  count++;
+	  }
 	  }
 
 
