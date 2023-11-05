@@ -1,2 +1,37 @@
 2023-11-05 22:04:24,111 [INFO] Gpio:273 - dependency for GPIO [LPUART1, RCC, SYS]
 2023-11-05 22:04:30,943 [INFO] Gpio:273 - dependency for GPIO [LPUART1, RCC, SYS]
+2023-11-05 22:07:06,807 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 506128152 Bytes (968884224)
+2023-11-05 22:07:07,636 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 534439704 Bytes (968884224)
+2023-11-05 22:07:11,804 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 628217112 Bytes (968884224)
+2023-11-05 22:07:12,069 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-11-05 22:07:12,069 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-11-05 22:07:12,069 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: LPUART
+2023-11-05 22:07:12,069 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-11-05 22:07:12,070 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-11-05 22:07:12,071 [INFO] CodeGenerator:799 - code generatio: config db path: E:\stm cube\STM32CubeIDE_1.13.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.9.2.202309101412\\db\
+2023-11-05 22:07:12,328 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\bcc35\Desktop\Elec\week2_interupt\MXTmpFiles\license.tmp_save
+2023-11-05 22:07:12,410 [INFO] CodeEngine:279 - Generated code: C:\Users\bcc35\Desktop\Elec\week2_interupt\MXTmpFiles\license.tmp
+2023-11-05 22:07:12,555 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\bcc35\Desktop\Elec\week2_interupt\MXTmpFiles\gpio.tmp_save
+2023-11-05 22:07:12,636 [INFO] CodeEngine:279 - Generated code: C:\Users\bcc35\Desktop\Elec\week2_interupt\MXTmpFiles\gpio.tmp
+2023-11-05 22:07:13,065 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\bcc35\Desktop\Elec\week2_interupt\Core\Src\stm32g4xx_it.c_save
+2023-11-05 22:07:13,186 [INFO] CodeEngine:279 - Generated code: C:\Users\bcc35\Desktop\Elec\week2_interupt\Core\Src\stm32g4xx_it.c
+2023-11-05 22:07:13,214 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\bcc35\Desktop\Elec\week2_interupt\Core\Inc\stm32g4xx_it.h_save
+2023-11-05 22:07:13,273 [INFO] CodeEngine:279 - Generated code: C:\Users\bcc35\Desktop\Elec\week2_interupt\Core\Inc\stm32g4xx_it.h
+2023-11-05 22:07:13,342 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\bcc35\Desktop\Elec\week2_interupt\Core\Src\stm32g4xx_hal_msp.c_save
+2023-11-05 22:07:13,423 [INFO] CodeEngine:279 - Generated code: C:\Users\bcc35\Desktop\Elec\week2_interupt\Core\Src\stm32g4xx_hal_msp.c
+2023-11-05 22:07:13,441 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\bcc35\Desktop\Elec\week2_interupt\MXTmpFiles\system.tmp_save
+2023-11-05 22:07:13,492 [INFO] CodeEngine:279 - Generated code: C:\Users\bcc35\Desktop\Elec\week2_interupt\MXTmpFiles\system.tmp
+2023-11-05 22:07:13,511 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\bcc35\Desktop\Elec\week2_interupt\Core\Inc\stm32g4xx_hal_conf.h_save
+2023-11-05 22:07:13,574 [INFO] CodeEngine:335 - Generated code: C:\Users\bcc35\Desktop\Elec\week2_interupt\Core\Inc\stm32g4xx_hal_conf.h
+2023-11-05 22:07:13,591 [WARN] IPConfigManager:2937 - Warning: the RefConfig RCC_CommonPeriphClockConfig is not available in your config.xml file
+2023-11-05 22:07:13,622 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\bcc35\Desktop\Elec\week2_interupt\Core\Inc\main.h_save
+2023-11-05 22:07:13,687 [INFO] CodeEngine:279 - Generated code: C:\Users\bcc35\Desktop\Elec\week2_interupt\Core\Inc\main.h
+2023-11-05 22:07:13,704 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\bcc35\Desktop\Elec\week2_interupt\Core\Src\main.c_save
+2023-11-05 22:07:13,791 [INFO] CodeEngine:279 - Generated code: C:\Users\bcc35\Desktop\Elec\week2_interupt\Core\Src\main.c
+2023-11-05 22:07:13,976 [INFO] ProjectBuilder:3064 - Time for Copy HAL[2] : 0mS.
+2023-11-05 22:07:13,980 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-11-05 22:07:14,208 [INFO] ConfigFileManager:1457 - The Die is : DIE469
+2023-11-05 22:07:15,243 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 1262mS.
+2023-11-05 22:07:15,243 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-11-05 22:07:15,246 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2023-11-05 22:07:54,028 [INFO] Gpio:273 - dependency for GPIO [LPUART1, RCC, SYS]
