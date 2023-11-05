@@ -135,7 +135,7 @@ int main(void)
 	  }
 	  if (ButtonState == 2048)
 	  {
-		  	if(ans != NULL && strcmp(ans, "65340500054") == 0)
+		  	if(ans != NULL && strcmp(ans, "65") == 0)
 		  	{
 		  	HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
 
