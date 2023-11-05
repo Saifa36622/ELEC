@@ -19,7 +19,6 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include <string.h>
-#include <stdlib.h>
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -143,14 +142,6 @@ int main(void)
 		  }
 		  free(ans);
 		  *ans = '\0';
-		  x = 0;
-		  while (ButtonState == 0 || ButtonState == 2048)
-		  {
-			  BTMX_TimeStamp = HAL_GetTick() + 25; //next scan in 25 ms
-			  ButtonMatrixRead();
-			  continue;
-		  }
-
 	  }
 	  else {
 		  for (int i = 0;i <= 10;i++)
@@ -378,10 +369,6 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, 0);
 free(ans);
 *ans = '\0';
-//while (ButtonState == 0)
-//		  {
-//			  continue;
-//		  }
 }
 void ButtonMatrixRead(){
 static uint8_t X=0;

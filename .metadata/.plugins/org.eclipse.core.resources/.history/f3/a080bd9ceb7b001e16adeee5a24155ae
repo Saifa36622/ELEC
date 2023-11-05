@@ -146,8 +146,6 @@ int main(void)
 		  x = 0;
 		  while (ButtonState == 0 || ButtonState == 2048)
 		  {
-			  BTMX_TimeStamp = HAL_GetTick() + 25; //next scan in 25 ms
-			  ButtonMatrixRead();
 			  continue;
 		  }
 

@@ -1543,3 +1543,704 @@ arm-none-eabi-size   week2_interupt.elf
   13104	    212	   2068	  15384	   3c18	week2_interupt.elf
 Finished building: default.size.stdout
  
+21:27:38 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:155:38: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  155 |                         ans = (char*)malloc(2);
+      |                                      ^~~~~~
+../Core/Src/main.c:22:1: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+   21 | #include <string.h>
+  +++ |+#include <stdlib.h>
+   22 | 
+../Core/Src/main.c:155:38: warning: incompatible implicit declaration of built-in function 'malloc' [-Wbuiltin-declaration-mismatch]
+  155 |                         ans = (char*)malloc(2);
+      |                                      ^~~~~~
+../Core/Src/main.c:155:38: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+../Core/Src/main.c:162:38: warning: implicit declaration of function 'realloc' [-Wimplicit-function-declaration]
+  162 |                         ans = (char*)realloc(ans, currentSize + 2);
+      |                                      ^~~~~~~
+../Core/Src/main.c:162:38: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+../Core/Src/main.c:162:38: warning: incompatible implicit declaration of built-in function 'realloc' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:162:38: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+../Core/Src/main.c: In function 'HAL_GPIO_EXTI_Callback':
+../Core/Src/main.c:352:38: warning: character constant too long for its type
+  352 | if(GPIO_Pin == GPIO_PIN_13 && ans == '65340500054')
+      |                                      ^~~~~~~~~~~~~
+../Core/Src/main.c:352:35: warning: comparison between pointer and integer
+  352 | if(GPIO_Pin == GPIO_PIN_13 && ans == '65340500054')
+      |                                   ^~
+arm-none-eabi-gcc -o "week2_interupt.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\week2_interupt\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week2_interupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: week2_interupt.elf
+ 
+arm-none-eabi-size   week2_interupt.elf 
+arm-none-eabi-objdump -h -S  week2_interupt.elf  > "week2_interupt.list"
+   text	   data	    bss	    dec	    hex	filename
+  13124	    212	   2068	  15404	   3c2c	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: week2_interupt.list
+ 
+21:29:29 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:155:38: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  155 |                         ans = (char*)malloc(2);
+      |                                      ^~~~~~
+../Core/Src/main.c:22:1: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+   21 | #include <string.h>
+  +++ |+#include <stdlib.h>
+   22 | 
+../Core/Src/main.c:155:38: warning: incompatible implicit declaration of built-in function 'malloc' [-Wbuiltin-declaration-mismatch]
+  155 |                         ans = (char*)malloc(2);
+      |                                      ^~~~~~
+../Core/Src/main.c:155:38: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+../Core/Src/main.c:162:38: warning: implicit declaration of function 'realloc' [-Wimplicit-function-declaration]
+  162 |                         ans = (char*)realloc(ans, currentSize + 2);
+      |                                      ^~~~~~~
+../Core/Src/main.c:162:38: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+../Core/Src/main.c:162:38: warning: incompatible implicit declaration of built-in function 'realloc' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:162:38: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+../Core/Src/main.c: In function 'HAL_GPIO_EXTI_Callback':
+../Core/Src/main.c:352:38: warning: character constant too long for its type
+  352 | if(GPIO_Pin == GPIO_PIN_13 && ans == '65340500054')
+      |                                      ^~~~~~~~~~~~~
+../Core/Src/main.c:352:35: warning: comparison between pointer and integer
+  352 | if(GPIO_Pin == GPIO_PIN_13 && ans == '65340500054')
+      |                                   ^~
+arm-none-eabi-gcc -o "week2_interupt.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\week2_interupt\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week2_interupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: week2_interupt.elf
+ 
+arm-none-eabi-size   week2_interupt.elf 
+arm-none-eabi-objdump -h -S  week2_interupt.elf  > "week2_interupt.list"
+   text	   data	    bss	    dec	    hex	filename
+  13132	    212	   2068	  15412	   3c34	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: week2_interupt.list
+ 
+21:30:06 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:155:38: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  155 |                         ans = (char*)malloc(2);
+      |                                      ^~~~~~
+../Core/Src/main.c:22:1: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+   21 | #include <string.h>
+  +++ |+#include <stdlib.h>
+   22 | 
+../Core/Src/main.c:155:38: warning: incompatible implicit declaration of built-in function 'malloc' [-Wbuiltin-declaration-mismatch]
+  155 |                         ans = (char*)malloc(2);
+      |                                      ^~~~~~
+../Core/Src/main.c:155:38: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+../Core/Src/main.c:162:38: warning: implicit declaration of function 'realloc' [-Wimplicit-function-declaration]
+  162 |                         ans = (char*)realloc(ans, currentSize + 2);
+      |                                      ^~~~~~~
+../Core/Src/main.c:162:38: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+../Core/Src/main.c:162:38: warning: incompatible implicit declaration of built-in function 'realloc' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:162:38: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+../Core/Src/main.c: In function 'HAL_GPIO_EXTI_Callback':
+../Core/Src/main.c:352:38: warning: character constant too long for its type
+  352 | if(GPIO_Pin == GPIO_PIN_13 && ans == '65340500054')
+      |                                      ^~~~~~~~~~~~~
+../Core/Src/main.c:352:35: warning: comparison between pointer and integer
+  352 | if(GPIO_Pin == GPIO_PIN_13 && ans == '65340500054')
+      |                                   ^~
+arm-none-eabi-gcc -o "week2_interupt.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\week2_interupt\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week2_interupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: week2_interupt.elf
+ 
+arm-none-eabi-size   week2_interupt.elf 
+arm-none-eabi-objdump -h -S  week2_interupt.elf  > "week2_interupt.list"
+   text	   data	    bss	    dec	    hex	filename
+  13132	    212	   2068	  15412	   3c34	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: week2_interupt.list
+ 
+21:31:06 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:155:38: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  155 |                         ans = (char*)malloc(2);
+      |                                      ^~~~~~
+../Core/Src/main.c:22:1: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+   21 | #include <string.h>
+  +++ |+#include <stdlib.h>
+   22 | 
+../Core/Src/main.c:155:38: warning: incompatible implicit declaration of built-in function 'malloc' [-Wbuiltin-declaration-mismatch]
+  155 |                         ans = (char*)malloc(2);
+      |                                      ^~~~~~
+../Core/Src/main.c:155:38: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+../Core/Src/main.c:162:38: warning: implicit declaration of function 'realloc' [-Wimplicit-function-declaration]
+  162 |                         ans = (char*)realloc(ans, currentSize + 2);
+      |                                      ^~~~~~~
+../Core/Src/main.c:162:38: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+../Core/Src/main.c:162:38: warning: incompatible implicit declaration of built-in function 'realloc' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:162:38: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+../Core/Src/main.c: In function 'HAL_GPIO_EXTI_Callback':
+../Core/Src/main.c:352:38: warning: multi-character character constant [-Wmultichar]
+  352 | if(GPIO_Pin == GPIO_PIN_13 && ans == '65')
+      |                                      ^~~~
+../Core/Src/main.c:352:35: warning: comparison between pointer and integer
+  352 | if(GPIO_Pin == GPIO_PIN_13 && ans == '65')
+      |                                   ^~
+arm-none-eabi-gcc -o "week2_interupt.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\week2_interupt\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week2_interupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: week2_interupt.elf
+ 
+arm-none-eabi-size   week2_interupt.elf 
+arm-none-eabi-objdump -h -S  week2_interupt.elf  > "week2_interupt.list"
+   text	   data	    bss	    dec	    hex	filename
+  13128	    212	   2068	  15408	   3c30	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: week2_interupt.list
+ 
+21:37:02 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:155:38: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  155 |                         ans = (char*)malloc(2);
+      |                                      ^~~~~~
+../Core/Src/main.c:22:1: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+   21 | #include <string.h>
+  +++ |+#include <stdlib.h>
+   22 | 
+../Core/Src/main.c:155:38: warning: incompatible implicit declaration of built-in function 'malloc' [-Wbuiltin-declaration-mismatch]
+  155 |                         ans = (char*)malloc(2);
+      |                                      ^~~~~~
+../Core/Src/main.c:155:38: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+../Core/Src/main.c:162:38: warning: implicit declaration of function 'realloc' [-Wimplicit-function-declaration]
+  162 |                         ans = (char*)realloc(ans, currentSize + 2);
+      |                                      ^~~~~~~
+../Core/Src/main.c:162:38: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+../Core/Src/main.c:162:38: warning: incompatible implicit declaration of built-in function 'realloc' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:162:38: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+../Core/Src/main.c: In function 'HAL_GPIO_EXTI_Callback':
+../Core/Src/main.c:352:39: warning: multi-character character constant [-Wmultichar]
+  352 | if(GPIO_Pin == GPIO_PIN_13 && *ans == '65')
+      |                                       ^~~~
+arm-none-eabi-gcc -o "week2_interupt.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\week2_interupt\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week2_interupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: week2_interupt.elf
+ 
+arm-none-eabi-size   week2_interupt.elf 
+arm-none-eabi-objdump -h -S  week2_interupt.elf  > "week2_interupt.list"
+   text	   data	    bss	    dec	    hex	filename
+  13052	    212	   2068	  15332	   3be4	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: week2_interupt.list
+ 
+21:37:38 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:155:38: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  155 |                         ans = (char*)malloc(2);
+      |                                      ^~~~~~
+../Core/Src/main.c:22:1: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+   21 | #include <string.h>
+  +++ |+#include <stdlib.h>
+   22 | 
+../Core/Src/main.c:155:38: warning: incompatible implicit declaration of built-in function 'malloc' [-Wbuiltin-declaration-mismatch]
+  155 |                         ans = (char*)malloc(2);
+      |                                      ^~~~~~
+../Core/Src/main.c:155:38: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+../Core/Src/main.c:162:38: warning: implicit declaration of function 'realloc' [-Wimplicit-function-declaration]
+  162 |                         ans = (char*)realloc(ans, currentSize + 2);
+      |                                      ^~~~~~~
+../Core/Src/main.c:162:38: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+../Core/Src/main.c:162:38: warning: incompatible implicit declaration of built-in function 'realloc' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:162:38: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+../Core/Src/main.c: In function 'HAL_GPIO_EXTI_Callback':
+../Core/Src/main.c:352:39: warning: multi-character character constant [-Wmultichar]
+  352 | if(GPIO_Pin == GPIO_PIN_13 && *ans == '65')
+      |                                       ^~~~
+arm-none-eabi-gcc -o "week2_interupt.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\week2_interupt\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week2_interupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: week2_interupt.elf
+ 
+arm-none-eabi-size   week2_interupt.elf 
+arm-none-eabi-objdump -h -S  week2_interupt.elf  > "week2_interupt.list"
+   text	   data	    bss	    dec	    hex	filename
+  13040	    212	   2068	  15320	   3bd8	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: week2_interupt.list
+ 
+21:38:25 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:155:38: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  155 |                         ans = (char*)malloc(2);
+      |                                      ^~~~~~
+../Core/Src/main.c:22:1: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+   21 | #include <string.h>
+  +++ |+#include <stdlib.h>
+   22 | 
+../Core/Src/main.c:155:38: warning: incompatible implicit declaration of built-in function 'malloc' [-Wbuiltin-declaration-mismatch]
+  155 |                         ans = (char*)malloc(2);
+      |                                      ^~~~~~
+../Core/Src/main.c:155:38: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+../Core/Src/main.c:162:38: warning: implicit declaration of function 'realloc' [-Wimplicit-function-declaration]
+  162 |                         ans = (char*)realloc(ans, currentSize + 2);
+      |                                      ^~~~~~~
+../Core/Src/main.c:162:38: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+../Core/Src/main.c:162:38: warning: incompatible implicit declaration of built-in function 'realloc' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:162:38: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+../Core/Src/main.c: In function 'HAL_GPIO_EXTI_Callback':
+../Core/Src/main.c:352:36: warning: comparison between pointer and integer
+  352 | if(GPIO_Pin == GPIO_PIN_13 && *ans == "65")
+      |                                    ^~
+../Core/Src/main.c:352:36: warning: comparison with string literal results in unspecified behavior [-Waddress]
+arm-none-eabi-gcc -o "week2_interupt.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\week2_interupt\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week2_interupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: week2_interupt.elf
+ 
+arm-none-eabi-size   week2_interupt.elf 
+arm-none-eabi-objdump -h -S  week2_interupt.elf  > "week2_interupt.list"
+   text	   data	    bss	    dec	    hex	filename
+  13140	    212	   2068	  15420	   3c3c	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: week2_interupt.list
+ 
+21:41:14 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:155:38: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  155 |                         ans = (char*)malloc(2);
+      |                                      ^~~~~~
+../Core/Src/main.c:22:1: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+   21 | #include <string.h>
+  +++ |+#include <stdlib.h>
+   22 | 
+../Core/Src/main.c:155:38: warning: incompatible implicit declaration of built-in function 'malloc' [-Wbuiltin-declaration-mismatch]
+  155 |                         ans = (char*)malloc(2);
+      |                                      ^~~~~~
+../Core/Src/main.c:155:38: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+../Core/Src/main.c:162:38: warning: implicit declaration of function 'realloc' [-Wimplicit-function-declaration]
+  162 |                         ans = (char*)realloc(ans, currentSize + 2);
+      |                                      ^~~~~~~
+../Core/Src/main.c:162:38: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+../Core/Src/main.c:162:38: warning: incompatible implicit declaration of built-in function 'realloc' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:162:38: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+../Core/Src/main.c: In function 'HAL_GPIO_EXTI_Callback':
+../Core/Src/main.c:357:1: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+  357 | free(ans)
+      | ^~~~
+../Core/Src/main.c:357:1: note: include '<stdlib.h>' or provide a declaration of 'free'
+../Core/Src/main.c:357:1: warning: incompatible implicit declaration of built-in function 'free' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:357:1: note: include '<stdlib.h>' or provide a declaration of 'free'
+../Core/Src/main.c:357:1: error: void value not ignored as it ought to be
+  357 | free(ans)
+      | ^~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+21:41:22 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:155:38: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  155 |                         ans = (char*)malloc(2);
+      |                                      ^~~~~~
+../Core/Src/main.c:22:1: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+   21 | #include <string.h>
+  +++ |+#include <stdlib.h>
+   22 | 
+../Core/Src/main.c:155:38: warning: incompatible implicit declaration of built-in function 'malloc' [-Wbuiltin-declaration-mismatch]
+  155 |                         ans = (char*)malloc(2);
+      |                                      ^~~~~~
+../Core/Src/main.c:155:38: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+../Core/Src/main.c:162:38: warning: implicit declaration of function 'realloc' [-Wimplicit-function-declaration]
+  162 |                         ans = (char*)realloc(ans, currentSize + 2);
+      |                                      ^~~~~~~
+../Core/Src/main.c:162:38: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+../Core/Src/main.c:162:38: warning: incompatible implicit declaration of built-in function 'realloc' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:162:38: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+../Core/Src/main.c: In function 'HAL_GPIO_EXTI_Callback':
+../Core/Src/main.c:357:1: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+  357 | free(ans);
+      | ^~~~
+../Core/Src/main.c:357:1: note: include '<stdlib.h>' or provide a declaration of 'free'
+../Core/Src/main.c:357:1: warning: incompatible implicit declaration of built-in function 'free' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:357:1: note: include '<stdlib.h>' or provide a declaration of 'free'
+arm-none-eabi-gcc -o "week2_interupt.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\week2_interupt\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week2_interupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: week2_interupt.elf
+ 
+arm-none-eabi-size   week2_interupt.elf 
+arm-none-eabi-objdump -h -S  week2_interupt.elf  > "week2_interupt.list"
+   text	   data	    bss	    dec	    hex	filename
+  13196	    212	   2068	  15476	   3c74	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: week2_interupt.list
+ 
+21:42:57 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-size   week2_interupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13196	    212	   2068	  15476	   3c74	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+21:46:37 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:143:19: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+  143 |                   free(ans);
+      |                   ^~~~
+../Core/Src/main.c:22:1: note: include '<stdlib.h>' or provide a declaration of 'free'
+   21 | #include <string.h>
+  +++ |+#include <stdlib.h>
+   22 | 
+../Core/Src/main.c:143:19: warning: incompatible implicit declaration of built-in function 'free' [-Wbuiltin-declaration-mismatch]
+  143 |                   free(ans);
+      |                   ^~~~
+../Core/Src/main.c:143:19: note: include '<stdlib.h>' or provide a declaration of 'free'
+../Core/Src/main.c:165:54: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  165 |                                         ans = (char*)malloc(2);
+      |                                                      ^~~~~~
+../Core/Src/main.c:165:54: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+../Core/Src/main.c:165:54: warning: incompatible implicit declaration of built-in function 'malloc' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:165:54: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+../Core/Src/main.c:172:54: warning: implicit declaration of function 'realloc' [-Wimplicit-function-declaration]
+  172 |                                         ans = (char*)realloc(ans, currentSize + 2);
+      |                                                      ^~~~~~~
+../Core/Src/main.c:172:54: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+../Core/Src/main.c:172:54: warning: incompatible implicit declaration of built-in function 'realloc' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:172:54: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+arm-none-eabi-gcc -o "week2_interupt.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\week2_interupt\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week2_interupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: week2_interupt.elf
+ 
+arm-none-eabi-size   week2_interupt.elf 
+arm-none-eabi-objdump -h -S  week2_interupt.elf  > "week2_interupt.list"
+   text	   data	    bss	    dec	    hex	filename
+  13204	    212	   2068	  15484	   3c7c	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: week2_interupt.list
+ 
+21:48:50 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:143:19: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+  143 |                   free(ans);
+      |                   ^~~~
+../Core/Src/main.c:22:1: note: include '<stdlib.h>' or provide a declaration of 'free'
+   21 | #include <string.h>
+  +++ |+#include <stdlib.h>
+   22 | 
+../Core/Src/main.c:143:19: warning: incompatible implicit declaration of built-in function 'free' [-Wbuiltin-declaration-mismatch]
+  143 |                   free(ans);
+      |                   ^~~~
+../Core/Src/main.c:143:19: note: include '<stdlib.h>' or provide a declaration of 'free'
+../Core/Src/main.c:165:54: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  165 |                                         ans = (char*)malloc(2);
+      |                                                      ^~~~~~
+../Core/Src/main.c:165:54: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+../Core/Src/main.c:165:54: warning: incompatible implicit declaration of built-in function 'malloc' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:165:54: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+../Core/Src/main.c:172:54: warning: implicit declaration of function 'realloc' [-Wimplicit-function-declaration]
+  172 |                                         ans = (char*)realloc(ans, currentSize + 2);
+      |                                                      ^~~~~~~
+../Core/Src/main.c:172:54: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+../Core/Src/main.c:172:54: warning: incompatible implicit declaration of built-in function 'realloc' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:172:54: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+../Core/Src/main.c: In function 'HAL_GPIO_EXTI_Callback':
+../Core/Src/main.c:369:26: error: 'GPIO_PIN5' undeclared (first use in this function); did you mean 'GPIO_PIN_5'?
+  369 | HAL_GPIO_WritePin(GPIOA, GPIO_PIN5, 0);
+      |                          ^~~~~~~~~
+      |                          GPIO_PIN_5
+../Core/Src/main.c:369:26: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:370:1: warning: incompatible implicit declaration of built-in function 'free' [-Wbuiltin-declaration-mismatch]
+  370 | free(ans);
+      | ^~~~
+../Core/Src/main.c:370:1: note: include '<stdlib.h>' or provide a declaration of 'free'
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+21:49:25 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:143:19: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+  143 |                   free(ans);
+      |                   ^~~~
+../Core/Src/main.c:22:1: note: include '<stdlib.h>' or provide a declaration of 'free'
+   21 | #include <string.h>
+  +++ |+#include <stdlib.h>
+   22 | 
+../Core/Src/main.c:143:19: warning: incompatible implicit declaration of built-in function 'free' [-Wbuiltin-declaration-mismatch]
+  143 |                   free(ans);
+      |                   ^~~~
+../Core/Src/main.c:143:19: note: include '<stdlib.h>' or provide a declaration of 'free'
+../Core/Src/main.c:165:54: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  165 |                                         ans = (char*)malloc(2);
+      |                                                      ^~~~~~
+../Core/Src/main.c:165:54: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+../Core/Src/main.c:165:54: warning: incompatible implicit declaration of built-in function 'malloc' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:165:54: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+../Core/Src/main.c:172:54: warning: implicit declaration of function 'realloc' [-Wimplicit-function-declaration]
+  172 |                                         ans = (char*)realloc(ans, currentSize + 2);
+      |                                                      ^~~~~~~
+../Core/Src/main.c:172:54: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+../Core/Src/main.c:172:54: warning: incompatible implicit declaration of built-in function 'realloc' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:172:54: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+../Core/Src/main.c: In function 'HAL_GPIO_EXTI_Callback':
+../Core/Src/main.c:370:1: warning: incompatible implicit declaration of built-in function 'free' [-Wbuiltin-declaration-mismatch]
+  370 | free(ans);
+      | ^~~~
+../Core/Src/main.c:370:1: note: include '<stdlib.h>' or provide a declaration of 'free'
+arm-none-eabi-gcc -o "week2_interupt.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\week2_interupt\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week2_interupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: week2_interupt.elf
+ 
+arm-none-eabi-size   week2_interupt.elf 
+arm-none-eabi-objdump -h -S  week2_interupt.elf  > "week2_interupt.list"
+   text	   data	    bss	    dec	    hex	filename
+  13232	    212	   2068	  15512	   3c98	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: week2_interupt.list
+ 
+21:50:18 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:143:19: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+  143 |                   free(ans);
+      |                   ^~~~
+../Core/Src/main.c:22:1: note: include '<stdlib.h>' or provide a declaration of 'free'
+   21 | #include <string.h>
+  +++ |+#include <stdlib.h>
+   22 | 
+../Core/Src/main.c:143:19: warning: incompatible implicit declaration of built-in function 'free' [-Wbuiltin-declaration-mismatch]
+  143 |                   free(ans);
+      |                   ^~~~
+../Core/Src/main.c:143:19: note: include '<stdlib.h>' or provide a declaration of 'free'
+../Core/Src/main.c:166:54: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  166 |                                         ans = (char*)malloc(2);
+      |                                                      ^~~~~~
+../Core/Src/main.c:166:54: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+../Core/Src/main.c:166:54: warning: incompatible implicit declaration of built-in function 'malloc' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:166:54: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+../Core/Src/main.c:173:54: warning: implicit declaration of function 'realloc' [-Wimplicit-function-declaration]
+  173 |                                         ans = (char*)realloc(ans, currentSize + 2);
+      |                                                      ^~~~~~~
+../Core/Src/main.c:173:54: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+../Core/Src/main.c:173:54: warning: incompatible implicit declaration of built-in function 'realloc' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:173:54: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+../Core/Src/main.c: In function 'HAL_GPIO_EXTI_Callback':
+../Core/Src/main.c:371:1: warning: incompatible implicit declaration of built-in function 'free' [-Wbuiltin-declaration-mismatch]
+  371 | free(ans);
+      | ^~~~
+../Core/Src/main.c:371:1: note: include '<stdlib.h>' or provide a declaration of 'free'
+arm-none-eabi-gcc -o "week2_interupt.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\week2_interupt\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week2_interupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: week2_interupt.elf
+ 
+arm-none-eabi-size   week2_interupt.elf 
+arm-none-eabi-objdump -h -S  week2_interupt.elf  > "week2_interupt.list"
+   text	   data	    bss	    dec	    hex	filename
+  13236	    212	   2068	  15516	   3c9c	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: week2_interupt.list
+ 
+21:51:39 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:143:19: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+  143 |                   free(ans);
+      |                   ^~~~
+../Core/Src/main.c:22:1: note: include '<stdlib.h>' or provide a declaration of 'free'
+   21 | #include <string.h>
+  +++ |+#include <stdlib.h>
+   22 | 
+../Core/Src/main.c:143:19: warning: incompatible implicit declaration of built-in function 'free' [-Wbuiltin-declaration-mismatch]
+  143 |                   free(ans);
+      |                   ^~~~
+../Core/Src/main.c:143:19: note: include '<stdlib.h>' or provide a declaration of 'free'
+../Core/Src/main.c:167:54: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  167 |                                         ans = (char*)malloc(2);
+      |                                                      ^~~~~~
+../Core/Src/main.c:167:54: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+../Core/Src/main.c:167:54: warning: incompatible implicit declaration of built-in function 'malloc' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:167:54: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+../Core/Src/main.c:174:54: warning: implicit declaration of function 'realloc' [-Wimplicit-function-declaration]
+  174 |                                         ans = (char*)realloc(ans, currentSize + 2);
+      |                                                      ^~~~~~~
+../Core/Src/main.c:174:54: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+../Core/Src/main.c:174:54: warning: incompatible implicit declaration of built-in function 'realloc' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:174:54: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+../Core/Src/main.c: In function 'HAL_GPIO_EXTI_Callback':
+../Core/Src/main.c:372:1: warning: incompatible implicit declaration of built-in function 'free' [-Wbuiltin-declaration-mismatch]
+  372 | free(ans);
+      | ^~~~
+../Core/Src/main.c:372:1: note: include '<stdlib.h>' or provide a declaration of 'free'
+arm-none-eabi-gcc -o "week2_interupt.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\week2_interupt\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week2_interupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: week2_interupt.elf
+ 
+arm-none-eabi-size   week2_interupt.elf 
+arm-none-eabi-objdump -h -S  week2_interupt.elf  > "week2_interupt.list"
+   text	   data	    bss	    dec	    hex	filename
+  13236	    212	   2068	  15516	   3c9c	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: week2_interupt.list
+ 
+21:52:47 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:143:19: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+  143 |                   free(ans);
+      |                   ^~~~
+../Core/Src/main.c:22:1: note: include '<stdlib.h>' or provide a declaration of 'free'
+   21 | #include <string.h>
+  +++ |+#include <stdlib.h>
+   22 | 
+../Core/Src/main.c:143:19: warning: incompatible implicit declaration of built-in function 'free' [-Wbuiltin-declaration-mismatch]
+  143 |                   free(ans);
+      |                   ^~~~
+../Core/Src/main.c:143:19: note: include '<stdlib.h>' or provide a declaration of 'free'
+../Core/Src/main.c:171:54: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  171 |                                         ans = (char*)malloc(2);
+      |                                                      ^~~~~~
+../Core/Src/main.c:171:54: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+../Core/Src/main.c:171:54: warning: incompatible implicit declaration of built-in function 'malloc' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:171:54: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+../Core/Src/main.c:178:54: warning: implicit declaration of function 'realloc' [-Wimplicit-function-declaration]
+  178 |                                         ans = (char*)realloc(ans, currentSize + 2);
+      |                                                      ^~~~~~~
+../Core/Src/main.c:178:54: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+../Core/Src/main.c:178:54: warning: incompatible implicit declaration of built-in function 'realloc' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:178:54: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+../Core/Src/main.c: In function 'HAL_GPIO_EXTI_Callback':
+../Core/Src/main.c:376:1: warning: incompatible implicit declaration of built-in function 'free' [-Wbuiltin-declaration-mismatch]
+  376 | free(ans);
+      | ^~~~
+../Core/Src/main.c:376:1: note: include '<stdlib.h>' or provide a declaration of 'free'
+arm-none-eabi-gcc -o "week2_interupt.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\week2_interupt\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week2_interupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: week2_interupt.elf
+ 
+arm-none-eabi-size   week2_interupt.elf 
+arm-none-eabi-objdump -h -S  week2_interupt.elf  > "week2_interupt.list"
+   text	   data	    bss	    dec	    hex	filename
+  13248	    212	   2068	  15528	   3ca8	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: week2_interupt.list
+ 
+21:53:24 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:143:19: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+  143 |                   free(ans);
+      |                   ^~~~
+../Core/Src/main.c:22:1: note: include '<stdlib.h>' or provide a declaration of 'free'
+   21 | #include <string.h>
+  +++ |+#include <stdlib.h>
+   22 | 
+../Core/Src/main.c:143:19: warning: incompatible implicit declaration of built-in function 'free' [-Wbuiltin-declaration-mismatch]
+  143 |                   free(ans);
+      |                   ^~~~
+../Core/Src/main.c:143:19: note: include '<stdlib.h>' or provide a declaration of 'free'
+../Core/Src/main.c:171:54: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  171 |                                         ans = (char*)malloc(2);
+      |                                                      ^~~~~~
+../Core/Src/main.c:171:54: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+../Core/Src/main.c:171:54: warning: incompatible implicit declaration of built-in function 'malloc' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:171:54: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+../Core/Src/main.c:178:54: warning: implicit declaration of function 'realloc' [-Wimplicit-function-declaration]
+  178 |                                         ans = (char*)realloc(ans, currentSize + 2);
+      |                                                      ^~~~~~~
+../Core/Src/main.c:178:54: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+../Core/Src/main.c:178:54: warning: incompatible implicit declaration of built-in function 'realloc' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:178:54: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+../Core/Src/main.c: In function 'HAL_GPIO_EXTI_Callback':
+../Core/Src/main.c:376:1: warning: incompatible implicit declaration of built-in function 'free' [-Wbuiltin-declaration-mismatch]
+  376 | free(ans);
+      | ^~~~
+../Core/Src/main.c:376:1: note: include '<stdlib.h>' or provide a declaration of 'free'
+arm-none-eabi-gcc -o "week2_interupt.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\week2_interupt\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week2_interupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: week2_interupt.elf
+ 
+arm-none-eabi-size   week2_interupt.elf 
+arm-none-eabi-objdump -h -S  week2_interupt.elf  > "week2_interupt.list"
+   text	   data	    bss	    dec	    hex	filename
+  13268	    212	   2068	  15548	   3cbc	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: week2_interupt.list
+ 
+21:54:57 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_GPIO_EXTI_Callback':
+../Core/Src/main.c:419:1: error: expected declaration or statement at end of input
+  419 | }
+      | ^
+At top level:
+../Core/Src/main.c:410:6: warning: 'Error_Handler' defined but not used [-Wunused-function]
+  410 | void Error_Handler(void)
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c:384:6: warning: 'ButtonMatrixRead' defined but not used [-Wunused-function]
+  384 | void ButtonMatrixRead(){
+      |      ^~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+21:55:16 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "week2_interupt.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\week2_interupt\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week2_interupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: week2_interupt.elf
+ 
+arm-none-eabi-size   week2_interupt.elf 
+arm-none-eabi-objdump -h -S  week2_interupt.elf  > "week2_interupt.list"
+   text	   data	    bss	    dec	    hex	filename
+  13248	    212	   2068	  15528	   3ca8	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: week2_interupt.list
+ 
+21:56:40 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "week2_interupt.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\week2_interupt\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week2_interupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: week2_interupt.elf
+ 
+arm-none-eabi-size   week2_interupt.elf 
+arm-none-eabi-objdump -h -S  week2_interupt.elf  > "week2_interupt.list"
+   text	   data	    bss	    dec	    hex	filename
+  13260	    212	   2068	  15540	   3cb4	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: week2_interupt.list
+ 
+21:57:17 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "week2_interupt.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\week2_interupt\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week2_interupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: week2_interupt.elf
+ 
+arm-none-eabi-size   week2_interupt.elf 
+arm-none-eabi-objdump -h -S  week2_interupt.elf  > "week2_interupt.list"
+   text	   data	    bss	    dec	    hex	filename
+  13276	    212	   2068	  15556	   3cc4	week2_interupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: week2_interupt.list
+ 
+21:58:15 **** Incremental Build of configuration Debug for project week2_interupt ****
+make -j16 all 
+arm-none-eabi-size   week2_interupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13276	    212	   2068	  15556	   3cc4	week2_interupt.elf
+Finished building: default.size.stdout
+ 
