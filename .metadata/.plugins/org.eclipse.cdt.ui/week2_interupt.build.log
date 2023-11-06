@@ -1,4 +1,4 @@
-22:14:49 **** Incremental Build of configuration Debug for project week2_interupt ****
+22:59:01 **** Incremental Build of configuration Debug for project week2_interupt ****
 make -j16 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -IC:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 ../Core/Src/main.c: In function 'main':
@@ -20,40 +20,40 @@ arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -D
   143 |                   free(ans);
       |                   ^~~~
 ../Core/Src/main.c:143:19: note: include '<stdlib.h>' or provide a declaration of 'free'
-../Core/Src/main.c:173:54: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
-  173 |                                         ans = (char*)malloc(2);
+../Core/Src/main.c:177:54: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+  177 |                                         ans = (char*)malloc(2);
       |                                                      ^~~~~~
-../Core/Src/main.c:173:54: note: include '<stdlib.h>' or provide a declaration of 'malloc'
-../Core/Src/main.c:173:54: warning: incompatible implicit declaration of built-in function 'malloc' [-Wbuiltin-declaration-mismatch]
-../Core/Src/main.c:173:54: note: include '<stdlib.h>' or provide a declaration of 'malloc'
-../Core/Src/main.c:179:59: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
-  179 |                                         int currentSize = strlen(ans);
+../Core/Src/main.c:177:54: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+../Core/Src/main.c:177:54: warning: incompatible implicit declaration of built-in function 'malloc' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:177:54: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+../Core/Src/main.c:183:59: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  183 |                                         int currentSize = strlen(ans);
       |                                                           ^~~~~~
-../Core/Src/main.c:179:59: note: include '<string.h>' or provide a declaration of 'strlen'
-../Core/Src/main.c:179:59: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
-../Core/Src/main.c:179:59: note: include '<string.h>' or provide a declaration of 'strlen'
-../Core/Src/main.c:180:54: warning: implicit declaration of function 'realloc' [-Wimplicit-function-declaration]
-  180 |                                         ans = (char*)realloc(ans, currentSize + 2);
+../Core/Src/main.c:183:59: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:183:59: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:183:59: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:184:54: warning: implicit declaration of function 'realloc' [-Wimplicit-function-declaration]
+  184 |                                         ans = (char*)realloc(ans, currentSize + 2);
       |                                                      ^~~~~~~
-../Core/Src/main.c:180:54: note: include '<stdlib.h>' or provide a declaration of 'realloc'
-../Core/Src/main.c:180:54: warning: incompatible implicit declaration of built-in function 'realloc' [-Wbuiltin-declaration-mismatch]
-../Core/Src/main.c:180:54: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+../Core/Src/main.c:184:54: note: include '<stdlib.h>' or provide a declaration of 'realloc'
+../Core/Src/main.c:184:54: warning: incompatible implicit declaration of built-in function 'realloc' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:184:54: note: include '<stdlib.h>' or provide a declaration of 'realloc'
 ../Core/Src/main.c: In function 'HAL_GPIO_EXTI_Callback':
-../Core/Src/main.c:386:17: warning: incompatible implicit declaration of built-in function 'free' [-Wbuiltin-declaration-mismatch]
-  386 |                 free(ans);
+../Core/Src/main.c:390:17: warning: incompatible implicit declaration of built-in function 'free' [-Wbuiltin-declaration-mismatch]
+  390 |                 free(ans);
       |                 ^~~~
-../Core/Src/main.c:386:17: note: include '<stdlib.h>' or provide a declaration of 'free'
+../Core/Src/main.c:390:17: note: include '<stdlib.h>' or provide a declaration of 'free'
 arm-none-eabi-gcc -o "week2_interupt.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\week2_interupt\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week2_interupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: week2_interupt.elf
  
 arm-none-eabi-size   week2_interupt.elf 
 arm-none-eabi-objdump -h -S  week2_interupt.elf  > "week2_interupt.list"
    text	   data	    bss	    dec	    hex	filename
-  13332	    212	   2068	  15612	   3cfc	week2_interupt.elf
+  13444	    212	   2068	  15724	   3d6c	week2_interupt.elf
 Finished building: default.size.stdout
  
 Finished building: week2_interupt.list
  
 
-22:14:50 Build Finished. 0 errors, 10 warnings. (took 772ms)
+22:59:02 Build Finished. 0 errors, 10 warnings. (took 820ms)
 

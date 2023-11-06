@@ -65,10 +65,10 @@ struct _ButMtx_Struct BMX_R[4] = {
 
 uint16_t ButtonState = 0;
 int16_t array_map[] = {0,1,16,256,2,32,512,4,64,1024,8};
-int16_t real_in[] = {0,1,2,3,4,5,6,7,8,9,0};
+int16_t real_in[] = {0,7,8,9,4,5,6,1,2,3,0};
 int16_t x = 0;
 int16_t count = 0;
-int16_t before = 0;
+int32_t before = 0;
 int16_t i_str = 0;
 char *ans;
 /* USER CODE END PV */
@@ -149,12 +149,11 @@ int main(void)
 			  ButtonMatrixRead();
 			  continue;
 		  }
-
 	  }
 	  else {
 		  for (int i = 0;i <= 10;i++)
 		  	  {
-		  		  if (ButtonState == 0)
+		  		  if (ButtonState == 0 || ButtonState == 4096 || ButtonState == 8192 || ButtonState == 16384 || ButtonState == 32768)
 		  		  {
 		  			  continue;
 		  		  }
@@ -164,9 +163,14 @@ int main(void)
 		  			  x = real_in[i];
 
 		  		  }
+		  		  else
+		  		  {
+		  			  continue;
+		  		  }
+
 
 		  	  }
-		  	  if (before != 0 && ButtonState == 0 )
+		  	  if (before != 0 && ButtonState == 0 && before != 4096 && before != 8192 && before != 32768 && before != 16384)
 		  	  {
 		  		  if (ans == NULL)
 		  		    {
@@ -385,6 +389,8 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, 0);
 		free(ans);
 		*ans = '\0';
+		x = 0;
+		count = 0;
 	}
 
 }
