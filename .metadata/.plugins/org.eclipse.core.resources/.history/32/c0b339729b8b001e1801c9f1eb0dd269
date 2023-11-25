@@ -49,7 +49,6 @@ UART_HandleTypeDef hlpuart1;
 /* USER CODE BEGIN PV */
 float DAC_Output=0;
 uint16_t x = 0;
-uint16_t DAC_Output2 = 0;
 float calculate_ADC = 0;
 struct _ADC_tag
 {
@@ -388,16 +387,6 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
-{
-//if(GPIO_Pin == GPIO_PIN_13)
-//{
-//HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
-//}
-	HAL_DAC_SetValue(&hdac1, DAC_CHANNEL_1, DAC_ALIGN_12B_R, calculate_ADC  * (4095/3.3));
-
-}
-
 void DAC_Update()
 {
 static uint32_t timeStamp =0;
@@ -406,7 +395,6 @@ if(HAL_GetTick()>timeStamp)
 timeStamp = HAL_GetTick()+750;
 x = DAC_Output * (4095.0/3.275);
 HAL_DAC_SetValue(&hdac1, DAC_CHANNEL_1, DAC_ALIGN_12B_R, x );
-//HAL_DAC_SetValue(&hdac1, DAC_CHANNEL_1, DAC_ALIGN_12B_R, DAC_Output2 );
 }
 }
 

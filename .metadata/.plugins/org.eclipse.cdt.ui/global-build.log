@@ -3694,3 +3694,108 @@ Finished building: default.size.stdout
  
 Finished building: week4.list
  
+20:59:09 **** Incremental Build of configuration Debug for project week4 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "week4.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\week4\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: week4.elf
+ 
+arm-none-eabi-size   week4.elf 
+arm-none-eabi-objdump -h -S  week4.elf  > "week4.list"
+   text	   data	    bss	    dec	    hex	filename
+  22536	     56	   1864	  24456	   5f88	week4.elf
+Finished building: default.size.stdout
+ 
+Finished building: week4.list
+ 
+20:59:33 **** Incremental Build of configuration Debug for project week4 ****
+make -j16 all 
+arm-none-eabi-size   week4.elf 
+   text	   data	    bss	    dec	    hex	filename
+  22536	     56	   1864	  24456	   5f88	week4.elf
+Finished building: default.size.stdout
+ 
+21:02:01 **** Incremental Build of configuration Debug for project week4 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "week4.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\week4\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: week4.elf
+ 
+arm-none-eabi-size   week4.elf 
+arm-none-eabi-objdump -h -S  week4.elf  > "week4.list"
+   text	   data	    bss	    dec	    hex	filename
+  22536	     56	   1864	  24456	   5f88	week4.elf
+Finished building: default.size.stdout
+ 
+Finished building: week4.list
+ 
+21:03:44 **** Incremental Build of configuration Debug for project week4 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "week4.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\week4\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: week4.elf
+ 
+arm-none-eabi-size   week4.elf 
+arm-none-eabi-objdump -h -S  week4.elf  > "week4.list"
+   text	   data	    bss	    dec	    hex	filename
+  22540	     56	   1864	  24460	   5f8c	week4.elf
+Finished building: default.size.stdout
+ 
+Finished building: week4.list
+ 
+21:07:36 **** Incremental Build of configuration Debug for project week4 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "week4.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\week4\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: week4.elf
+ 
+arm-none-eabi-size   week4.elf 
+arm-none-eabi-objdump -h -S  week4.elf  > "week4.list"
+   text	   data	    bss	    dec	    hex	filename
+  22596	     56	   1864	  24516	   5fc4	week4.elf
+Finished building: default.size.stdout
+ 
+Finished building: week4.list
+ 
+21:07:49 **** Incremental Build of configuration Debug for project week4 ****
+make -j16 all 
+arm-none-eabi-size   week4.elf 
+   text	   data	    bss	    dec	    hex	filename
+  22596	     56	   1864	  24516	   5fc4	week4.elf
+Finished building: default.size.stdout
+ 
+21:07:52 **** Incremental Build of configuration Debug for project week4 ****
+make -j16 all 
+arm-none-eabi-size   week4.elf 
+   text	   data	    bss	    dec	    hex	filename
+  22596	     56	   1864	  24516	   5fc4	week4.elf
+Finished building: default.size.stdout
+ 
+21:09:07 **** Incremental Build of configuration Debug for project week4 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "week4.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\week4\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: week4.elf
+ 
+arm-none-eabi-size   week4.elf 
+arm-none-eabi-objdump -h -S  week4.elf  > "week4.list"
+   text	   data	    bss	    dec	    hex	filename
+  22536	     56	   1864	  24456	   5f88	week4.elf
+Finished building: default.size.stdout
+ 
+Finished building: week4.list
+ 
+21:10:01 **** Incremental Build of configuration Debug for project week4 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "week4.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\week4\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="week4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: week4.elf
+ 
+arm-none-eabi-size   week4.elf 
+arm-none-eabi-objdump -h -S  week4.elf  > "week4.list"
+   text	   data	    bss	    dec	    hex	filename
+  22560	     56	   1864	  24480	   5fa0	week4.elf
+Finished building: default.size.stdout
+ 
+Finished building: week4.list
+ 

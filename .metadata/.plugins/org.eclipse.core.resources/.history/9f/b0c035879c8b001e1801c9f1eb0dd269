@@ -394,7 +394,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 //{
 //HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
 //}
-	HAL_DAC_SetValue(&hdac1, DAC_CHANNEL_1, DAC_ALIGN_12B_R, calculate_ADC  * (4095/3.3));
+	HAL_DAC_SetValue(&hdac1, DAC_CHANNEL_1, DAC_ALIGN_12B_R, calculate_ADC );
 
 }
 
