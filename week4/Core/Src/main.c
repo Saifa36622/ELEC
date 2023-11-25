@@ -49,6 +49,7 @@ UART_HandleTypeDef hlpuart1;
 /* USER CODE BEGIN PV */
 float DAC_Output=0;
 float x = 0;
+float calculate_ADC = 0;
 struct _ADC_tag
 {
 ADC_ChannelConfTypeDef Config;
@@ -130,6 +131,8 @@ int main(void)
     /* USER CODE BEGIN 3 */
 	  DAC_Update();
 	  ADC_Read_blocking();
+	  calculate_ADC = ADC1_Channel[0].data * (3.3/4096);
+
   }
   /* USER CODE END 3 */
 }
