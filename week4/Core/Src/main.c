@@ -132,7 +132,7 @@ int main(void)
     /* USER CODE BEGIN 3 */
 	  DAC_Update();
 	  ADC_Read_blocking();
-	  calculate_ADC = ADC1_Channel[0].data * (3.3/4096);
+	  calculate_ADC = ADC1_Channel[0].data * (3.3/1023);
 
   }
   /* USER CODE END 3 */
@@ -207,7 +207,7 @@ static void MX_ADC1_Init(void)
   */
   hadc1.Instance = ADC1;
   hadc1.Init.ClockPrescaler = ADC_CLOCK_SYNC_PCLK_DIV4;
-  hadc1.Init.Resolution = ADC_RESOLUTION_12B;
+  hadc1.Init.Resolution = ADC_RESOLUTION_10B;
   hadc1.Init.DataAlign = ADC_DATAALIGN_RIGHT;
   hadc1.Init.GainCompensation = 0;
   hadc1.Init.ScanConvMode = ADC_SCAN_DISABLE;

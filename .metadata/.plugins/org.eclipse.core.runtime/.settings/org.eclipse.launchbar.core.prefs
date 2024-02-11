@@ -1,8 +1,15 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
-configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:test1 Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:week2_interupt Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:week3 Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:week4 Debug
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:test1 Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:week2_interupt Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:week3 Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:week4 Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:final_exam Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:T2_week1,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:T2_week2 Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:T2_week3 Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:T2_week4 Debug
 eclipse.preferences.version=1
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:T2_week1/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:T2_week1/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:T2_week2\ Debug/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:T2_week3\ Debug/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:T2_week4\ Debug/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:final_exam\ Debug/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:final_exam\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:test1\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:test1\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:week2_interupt\ Debug/activeLaunchMode=debug

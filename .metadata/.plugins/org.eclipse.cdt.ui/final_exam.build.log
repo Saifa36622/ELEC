@@ -1,0 +1,124 @@
+12:00:10 **** Incremental Build of configuration Debug for project final_exam ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:61:1: error: unknown type name 'unit_32_t'; did you mean 'uint32_t'?
+   61 | unit_32_t Scret_code = 0;
+      | ^~~~~~~~~
+      | uint32_t
+../Core/Src/main.c: In function 'task3':
+../Core/Src/main.c:224:35: error: redefinition of 'TimeStamp'
+  224 |                   static uint32_t TimeStamp = 0;
+      |                                   ^~~~~~~~~
+../Core/Src/main.c:220:27: note: previous definition of 'TimeStamp' with type 'uint32_t' {aka 'long unsigned int'}
+  220 |           static uint32_t TimeStamp = 0;
+      |                           ^~~~~~~~~
+../Core/Src/main.c:233:35: error: redefinition of 'TimeStamp2'
+  233 |                   static uint32_t TimeStamp2 = 0;
+      |                                   ^~~~~~~~~~
+../Core/Src/main.c:229:27: note: previous definition of 'TimeStamp2' with type 'uint32_t' {aka 'long unsigned int'}
+  229 |           static uint32_t TimeStamp2 = 0;
+      |                           ^~~~~~~~~~
+../Core/Src/main.c:238:35: error: redefinition of 'TimeStamp2'
+  238 |                   static uint32_t TimeStamp2 = 0;
+      |                                   ^~~~~~~~~~
+../Core/Src/main.c:233:35: note: previous definition of 'TimeStamp2' with type 'uint32_t' {aka 'long unsigned int'}
+  233 |                   static uint32_t TimeStamp2 = 0;
+      |                                   ^~~~~~~~~~
+../Core/Src/main.c:242:35: error: redefinition of 'TimeStamp2'
+  242 |                   static uint32_t TimeStamp2 = 0;
+      |                                   ^~~~~~~~~~
+../Core/Src/main.c:238:35: note: previous definition of 'TimeStamp2' with type 'uint32_t' {aka 'long unsigned int'}
+  238 |                   static uint32_t TimeStamp2 = 0;
+      |                                   ^~~~~~~~~~
+../Core/Src/main.c:247:27: error: redefinition of 'TimeStamp2'
+  247 |           static uint32_t TimeStamp2 = 0;
+      |                           ^~~~~~~~~~
+../Core/Src/main.c:242:35: note: previous definition of 'TimeStamp2' with type 'uint32_t' {aka 'long unsigned int'}
+  242 |                   static uint32_t TimeStamp2 = 0;
+      |                                   ^~~~~~~~~~
+../Core/Src/main.c:251:35: error: redefinition of 'TimeStamp2'
+  251 |                   static uint32_t TimeStamp2 = 0;
+      |                                   ^~~~~~~~~~
+../Core/Src/main.c:247:27: note: previous definition of 'TimeStamp2' with type 'uint32_t' {aka 'long unsigned int'}
+  247 |           static uint32_t TimeStamp2 = 0;
+      |                           ^~~~~~~~~~
+../Core/Src/main.c: In function 'task2':
+../Core/Src/main.c:194:13: warning: unused variable 's4' [-Wunused-variable]
+  194 |         int s4 =HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_10);
+      |             ^~
+../Core/Src/main.c:193:13: warning: unused variable 's3' [-Wunused-variable]
+  193 |         int s3 =HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_3);
+      |             ^~
+../Core/Src/main.c:192:13: warning: unused variable 's2' [-Wunused-variable]
+  192 |         int s2 =HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_5);
+      |             ^~
+../Core/Src/main.c:191:13: warning: unused variable 's1' [-Wunused-variable]
+  191 |         int s1 = HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_4);
+      |             ^~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:330:13: error: invalid storage class for function 'MX_ADC1_Init'
+  330 | static void MX_ADC1_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:398:13: error: invalid storage class for function 'MX_DAC1_Init'
+  398 | static void MX_DAC1_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:445:13: error: invalid storage class for function 'MX_LPUART1_UART_Init'
+  445 | static void MX_LPUART1_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:492:13: error: invalid storage class for function 'MX_GPIO_Init'
+  492 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:581:1: error: expected declaration or statement at end of input
+  581 | }
+      | ^
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:85:13: warning: 'MX_GPIO_Init' used but never defined
+   85 | static void MX_GPIO_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:86:13: warning: 'MX_LPUART1_UART_Init' used but never defined
+   86 | static void MX_LPUART1_UART_Init(void);
+      |             ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:87:13: warning: 'MX_ADC1_Init' used but never defined
+   87 | static void MX_ADC1_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:88:13: warning: 'MX_DAC1_Init' used but never defined
+   88 | static void MX_DAC1_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:572:6: warning: 'Error_Handler' defined but not used [-Wunused-function]
+  572 | void Error_Handler(void)
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c:552:6: warning: 'ADC_Read_blocking' defined but not used [-Wunused-function]
+  552 | void ADC_Read_blocking()
+      |      ^~~~~~~~~~~~~~~~~
+../Core/Src/main.c:492:13: warning: 'MX_GPIO_Init' defined but not used [-Wunused-function]
+  492 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:445:13: warning: 'MX_LPUART1_UART_Init' defined but not used [-Wunused-function]
+  445 | static void MX_LPUART1_UART_Init(void)
+      |             ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:398:13: warning: 'MX_DAC1_Init' defined but not used [-Wunused-function]
+  398 | static void MX_DAC1_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:330:13: warning: 'MX_ADC1_Init' defined but not used [-Wunused-function]
+  330 | static void MX_ADC1_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:283:6: warning: 'SystemClock_Config' defined but not used [-Wunused-function]
+  283 | void SystemClock_Config(void)
+      |      ^~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:260:6: warning: 'task4' defined but not used [-Wunused-function]
+  260 | void task4()
+      |      ^~~~~
+../Core/Src/main.c:182:6: warning: 'task2' defined but not used [-Wunused-function]
+  182 | void task2()
+      |      ^~~~~
+../Core/Src/main.c:209:14: warning: 'DAC_Update' defined but not used [-Wunused-function]
+  209 |         void DAC_Update()
+      |              ^~~~~~~~~~
+../Core/Src/main.c:144:6: warning: 'task1' defined but not used [-Wunused-function]
+  144 | void task1()
+      |      ^~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+
+12:00:10 Build Failed. 13 errors, 19 warnings. (took 365ms)
+

@@ -1,0 +1,30 @@
+15:02:16 **** Incremental Build of configuration Debug for project T2_week3 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:107:29: warning: passing argument 2 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
+  107 |   HAL_ADC_Start_DMA(&hadc1, ADCBuffer, 10);
+      |                             ^~~~~~~~~
+      |                             |
+      |                             uint16_t * {aka short unsigned int *}
+In file included from ../Core/Inc/stm32g4xx_hal_conf.h:228,
+                 from ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_adc.h:2242:78: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
+ 2242 | HAL_StatusTypeDef       HAL_ADC_Start_DMA(ADC_HandleTypeDef *hadc, uint32_t *pData, uint32_t Length);
+      |                                                                    ~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "T2_week3.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\T2_week3\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="T2_week3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: T2_week3.elf
+ 
+arm-none-eabi-size   T2_week3.elf 
+arm-none-eabi-objdump -h -S  T2_week3.elf  > "T2_week3.list"
+   text	   data	    bss	    dec	    hex	filename
+  22748	     20	   2092	  24860	   611c	T2_week3.elf
+Finished building: default.size.stdout
+ 
+Finished building: T2_week3.list
+ 
+
+15:02:17 Build Finished. 0 errors, 1 warnings. (took 971ms)
+

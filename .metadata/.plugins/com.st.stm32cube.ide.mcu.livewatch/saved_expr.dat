@@ -1,2 +1,7 @@
-DAC_Output
-x
+ADC1_Channel
+ADC1_Channel
+Fall
+Rise
+dt
+ServoTime
+ServoPeriod
