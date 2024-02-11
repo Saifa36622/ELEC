@@ -51,6 +51,12 @@ TIM_HandleTypeDef htim2;
 uint16_t ADC_RawRead[300]={0};
 uint64_t lower;
 uint64_t real_time;
+uint64_t sensor1;
+uint64_t real_sensor1;
+uint64_t sensor2;
+uint64_t real_sensor2;
+uint64_t sensor3;
+uint64_t real_sensor3;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -116,6 +122,30 @@ int main(void)
    }
   while (1)
   {
+	  sensor1 = 0;
+	  for(int i=0;i <= 299 ;i += 3)
+	  {
+		  sensor1 += ADC_RawRead[i];
+	  }
+
+	  real_sensor1 = sensor1/102.3;
+
+	  sensor2 = 0;
+	  	  	  for(int i2=1;i2 <= 299 ;i2 += 3)
+	  	  	  {
+	  	  		  sensor2 += ADC_RawRead[i2];
+	  	  	  }
+	  	  	  real_sensor2 = sensor2/102.3;
+
+	  	  	sensor3 = 0;
+	  	  		  for(int i3=2;i3 <= 299 ;i3 += 3)
+	  	  		  {
+	  	  			  sensor3 += ADC_RawRead[i3];
+	  	  		  }
+
+	  	  		  real_sensor3 = sensor3/102.3;
+
+//	  HAL_Delay(1000);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
