@@ -1,4 +1,4 @@
-10:51:41 **** Incremental Build of configuration Debug for project week2_interupt ****
+07:50:31 **** Build of configuration Debug for project week2_interupt ****
 make -j16 all 
 arm-none-eabi-size   week2_interupt.elf 
    text	   data	    bss	    dec	    hex	filename
@@ -6,5 +6,5 @@ arm-none-eabi-size   week2_interupt.elf
 Finished building: default.size.stdout
  
 
-10:51:42 Build Finished. 0 errors, 0 warnings. (took 1s.664ms)
+07:50:31 Build Finished. 0 errors, 0 warnings. (took 263ms)
 
