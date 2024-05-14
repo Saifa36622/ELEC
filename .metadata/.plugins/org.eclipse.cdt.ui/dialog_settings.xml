@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<item key="org.eclipse.cdt.utils.ui.controls.FileListControl" value="ARM_MATH_MATRIX_CHECK"/>
 	<section name="completion_proposal_size">
 	</section>
 	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration">
@@ -7,5 +8,11 @@
 	<section name="NewClassWizardPage">
 	</section>
 	<section name="PDOMSearchPage">
+	</section>
+	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration.internal">
+		<item key="size.width" value="899"/>
+		<item key="size.height" value="239"/>
+	</section>
+	<section name="OptionalMessageDialog.hide.">
 	</section>
 </section>

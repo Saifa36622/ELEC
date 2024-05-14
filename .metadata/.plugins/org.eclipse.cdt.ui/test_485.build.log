@@ -1,0 +1,10 @@
+19:59:20 **** Build of configuration Debug for project test_485 ****
+make -j16 all 
+arm-none-eabi-size  test_485.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14832	     20	   1868	  16720	   4150	test_485.elf
+Finished building: default.size.stdout
+ 
+
+19:59:20 Build Finished. 0 errors, 0 warnings. (took 380ms)
+

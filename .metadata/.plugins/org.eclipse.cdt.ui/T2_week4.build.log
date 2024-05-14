@@ -1,18 +1,10 @@
-07:50:28 **** Build of configuration Debug for project T2_week4 ****
+19:59:03 **** Build of configuration Debug for project T2_week4 ****
 make -j16 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc "../Core/Src/stm32g4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32g4xx_hal_msp.d" -MT"Core/Src/stm32g4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32g4xx_hal_msp.o"
-arm-none-eabi-gcc -o "T2_week4.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\T2_week4\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="T2_week4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: T2_week4.elf
- 
-arm-none-eabi-size   T2_week4.elf 
-arm-none-eabi-objdump -h -S  T2_week4.elf  > "T2_week4.list"
+arm-none-eabi-size  T2_week4.elf 
    text	   data	    bss	    dec	    hex	filename
   18464	     20	   1876	  20360	   4f88	T2_week4.elf
 Finished building: default.size.stdout
  
-Finished building: T2_week4.list
- 
 
-07:50:29 Build Finished. 0 errors, 0 warnings. (took 1s.266ms)
+19:59:03 Build Finished. 0 errors, 0 warnings. (took 386ms)
 

@@ -50,7 +50,7 @@ TIM_HandleTypeDef htim3;
 
 /* USER CODE BEGIN PV */
 uint16_t ADC_RawRead[300]={0};
-uint64_t lower;
+uint64_t lower = 0;
 uint64_t real_time;
 uint64_t sensor1;
 uint64_t real_sensor1;
@@ -128,10 +128,12 @@ int main(void)
   	  real_time = __HAL_TIM_GET_COUNTER(&htim2) + (lower * 4294967295);
 
    }
+
   long map(long x, long in_min, long in_max, long out_min, long out_max)
   {
   return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
   }
+
   while (1)
   {
 	  micro();
@@ -145,21 +147,22 @@ int main(void)
 		  sensor1 += ADC_RawRead[i];
 	  }
 
-	  real_sensor1 = sensor1/102.3;
+	  real_sensor1 = sensor1/100;
 
 	  sensor2 = 0;
 	  for(int i2=1;i2 <= 299 ;i2 += 3)
 	  {
 	  	  sensor2 += ADC_RawRead[i2];
 	  }
-	  real_sensor2 = sensor2/102.3;
+	  real_sensor2 = sensor2/100;
 	  sensor3 = 0;
 	  for(int i3=2;i3 <= 299 ;i3 += 3)
 	  {
 	  	  	sensor3 += ADC_RawRead[i3];
 	  }
 
-	  real_sensor3 = sensor3/102.3;
+	  real_sensor3 = sensor3/100;
+
 	  if (real_sensor1 >= 0 && real_sensor1 <= 255)
 	  {
 		  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 500);

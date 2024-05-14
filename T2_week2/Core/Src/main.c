@@ -43,6 +43,9 @@
 ADC_HandleTypeDef hadc1;
 DMA_HandleTypeDef hdma_adc1;
 
+DAC_HandleTypeDef hdac1;
+DAC_HandleTypeDef hdac2;
+
 UART_HandleTypeDef hlpuart1;
 
 /* USER CODE BEGIN PV */
@@ -172,6 +175,8 @@ static void MX_GPIO_Init(void);
 static void MX_DMA_Init(void);
 static void MX_LPUART1_UART_Init(void);
 static void MX_ADC1_Init(void);
+static void MX_DAC1_Init(void);
+static void MX_DAC2_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -212,11 +217,15 @@ int main(void)
   MX_DMA_Init();
   MX_LPUART1_UART_Init();
   MX_ADC1_Init();
+  MX_DAC1_Init();
+  MX_DAC2_Init();
   /* USER CODE BEGIN 2 */
 //  HAL_ADCEx_Calibration_Start(&hadc1, ADC_SINGLE_ENDED);
 //  HAL_ADC_Start_IT(&hadc1);
   HAL_ADCEx_Calibration_Start(&hadc1, ADC_SINGLE_ENDED);
   HAL_ADC_Start_DMA(&hadc1, ADC_RawRead, 40);
+  HAL_DAC_Start(&hdac1, DAC_CHANNEL_1);
+  HAL_DAC_Start(&hdac2, DAC_CHANNEL_1);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -227,6 +236,8 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 //	  HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
+	  HAL_DAC_SetValue(&hdac1, DAC_CHANNEL_1, DAC_ALIGN_12B_R,4095);
+	  HAL_DAC_SetValue(&hdac2, DAC_CHANNEL_1, DAC_ALIGN_12B_R,4095);
 //	  HAL_Delay(500);
   }
   /* USER CODE END 3 */
@@ -370,6 +381,100 @@ static void MX_ADC1_Init(void)
   /* USER CODE BEGIN ADC1_Init 2 */
 
   /* USER CODE END ADC1_Init 2 */
+
+}
+
+/**
+  * @brief DAC1 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_DAC1_Init(void)
+{
+
+  /* USER CODE BEGIN DAC1_Init 0 */
+
+  /* USER CODE END DAC1_Init 0 */
+
+  DAC_ChannelConfTypeDef sConfig = {0};
+
+  /* USER CODE BEGIN DAC1_Init 1 */
+
+  /* USER CODE END DAC1_Init 1 */
+
+  /** DAC Initialization
+  */
+  hdac1.Instance = DAC1;
+  if (HAL_DAC_Init(&hdac1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /** DAC channel OUT1 config
+  */
+  sConfig.DAC_HighFrequency = DAC_HIGH_FREQUENCY_INTERFACE_MODE_AUTOMATIC;
+  sConfig.DAC_DMADoubleDataMode = DISABLE;
+  sConfig.DAC_SignedFormat = DISABLE;
+  sConfig.DAC_SampleAndHold = DAC_SAMPLEANDHOLD_DISABLE;
+  sConfig.DAC_Trigger = DAC_TRIGGER_NONE;
+  sConfig.DAC_Trigger2 = DAC_TRIGGER_NONE;
+  sConfig.DAC_OutputBuffer = DAC_OUTPUTBUFFER_ENABLE;
+  sConfig.DAC_ConnectOnChipPeripheral = DAC_CHIPCONNECT_EXTERNAL;
+  sConfig.DAC_UserTrimming = DAC_TRIMMING_FACTORY;
+  if (HAL_DAC_ConfigChannel(&hdac1, &sConfig, DAC_CHANNEL_1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN DAC1_Init 2 */
+
+  /* USER CODE END DAC1_Init 2 */
+
+}
+
+/**
+  * @brief DAC2 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_DAC2_Init(void)
+{
+
+  /* USER CODE BEGIN DAC2_Init 0 */
+
+  /* USER CODE END DAC2_Init 0 */
+
+  DAC_ChannelConfTypeDef sConfig = {0};
+
+  /* USER CODE BEGIN DAC2_Init 1 */
+
+  /* USER CODE END DAC2_Init 1 */
+
+  /** DAC Initialization
+  */
+  hdac2.Instance = DAC2;
+  if (HAL_DAC_Init(&hdac2) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /** DAC channel OUT1 config
+  */
+  sConfig.DAC_HighFrequency = DAC_HIGH_FREQUENCY_INTERFACE_MODE_AUTOMATIC;
+  sConfig.DAC_DMADoubleDataMode = DISABLE;
+  sConfig.DAC_SignedFormat = DISABLE;
+  sConfig.DAC_SampleAndHold = DAC_SAMPLEANDHOLD_DISABLE;
+  sConfig.DAC_Trigger = DAC_TRIGGER_NONE;
+  sConfig.DAC_Trigger2 = DAC_TRIGGER_NONE;
+  sConfig.DAC_OutputBuffer = DAC_OUTPUTBUFFER_ENABLE;
+  sConfig.DAC_ConnectOnChipPeripheral = DAC_CHIPCONNECT_EXTERNAL;
+  sConfig.DAC_UserTrimming = DAC_TRIMMING_FACTORY;
+  if (HAL_DAC_ConfigChannel(&hdac2, &sConfig, DAC_CHANNEL_1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN DAC2_Init 2 */
+
+  /* USER CODE END DAC2_Init 2 */
 
 }
 

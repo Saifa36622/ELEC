@@ -22,6 +22,8 @@ Drivers/STM32G4xx_HAL_Driver/stm32g4xx_hal_rcc_ex.o: \
  C:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.2/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_adc.h \
  C:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.2/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_adc.h \
  C:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.2/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_adc_ex.h \
+ C:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.2/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dac.h \
+ C:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.2/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dac_ex.h \
  C:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.2/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h \
  C:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.2/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h \
  C:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.2/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h \
@@ -52,6 +54,8 @@ C:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.2/Drivers/STM32G4xx_HAL
 C:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.2/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_adc.h:
 C:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.2/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_adc.h:
 C:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.2/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_adc_ex.h:
+C:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.2/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dac.h:
+C:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.2/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dac_ex.h:
 C:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.2/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h:
 C:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.2/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h:
 C:/Users/bcc35/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.2/Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h:

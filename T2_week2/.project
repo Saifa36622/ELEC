@@ -51,6 +51,16 @@
 			<locationURI>PARENT-3-PROJECT_LOC/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.2/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c</locationURI>
 		</link>
 		<link>
+			<name>Drivers/STM32G4xx_HAL_Driver/stm32g4xx_hal_dac.c</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.2/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dac.c</locationURI>
+		</link>
+		<link>
+			<name>Drivers/STM32G4xx_HAL_Driver/stm32g4xx_hal_dac_ex.c</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.2/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dac_ex.c</locationURI>
+		</link>
+		<link>
 			<name>Drivers/STM32G4xx_HAL_Driver/stm32g4xx_hal_dma.c</name>
 			<type>1</type>
 			<locationURI>PARENT-3-PROJECT_LOC/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.2/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c</locationURI>

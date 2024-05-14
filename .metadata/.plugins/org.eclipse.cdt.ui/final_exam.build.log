@@ -1,4 +1,4 @@
-07:50:29 **** Build of configuration Debug for project final_exam ****
+19:59:17 **** Build of configuration Debug for project final_exam ****
 make -j16 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 ../Core/Src/main.c:61:1: error: unknown type name 'unit_32_t'; did you mean 'uint32_t'?
@@ -120,5 +120,5 @@ arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -D
 make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
 "make -j16 all" terminated with exit code 2. Build might be incomplete.
 
-07:50:30 Build Failed. 13 errors, 19 warnings. (took 659ms)
+19:59:18 Build Failed. 13 errors, 19 warnings. (took 892ms)
 
