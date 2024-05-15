@@ -46,12 +46,16 @@ SPI_HandleTypeDef hspi3;
 
 /* USER CODE BEGIN PV */
 uint8_t SPIRx[10];
+uint8_t SPIRx2[10];
 uint8_t SPITx[10];
 uint8_t RxBuffer[4];
-uint8_t TxBuffer[4];
+uint8_t TxBuffer[6];
 uint8_t x = 0;
 uint8_t y = 0;
+uint8_t start = 0;
+uint8_t shoot = 0;
 uint64_t time = 0;
+uint8_t LED = 255;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -60,7 +64,8 @@ static void MX_GPIO_Init(void);
 static void MX_LPUART1_UART_Init(void);
 static void MX_SPI3_Init(void);
 /* USER CODE BEGIN PFP */
-
+void SPITxRx_Setup();
+void SPITxRx_readIO();
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -114,15 +119,51 @@ int main(void)
 	  if (time+1000 >= HAL_GetTick())
 	  {
 		  SPITxRx_readIO();
+//		  HAL_Delay(1);
+		  SPITxRx_writeIO();
+//		  HAL_Delay(1);
+		  // 14 13 11 7 defaut 15
+		 switch (SPIRx2[2]) {
+			case 14:
+				LED = 8;
+				x = 1;
+				break;
+			case 13:
+				LED = 4;
+				y = 1;
+				break;
+			case 11:
+				LED = 2;
+				start = 1;
+				break;
+			case 7:
+				shoot = 1;
+				LED = 1;
+				break;
+			default:
+				LED = 0;
+				x = 0;
+				y = 0;
+				start = 0;
+				shoot = 0;
+				break;
+		}
+		if(RxBuffer[1] == 1)
+		{
+			LED = 255;
+		}
+
 			  TxBuffer[0] = 69;
 			  TxBuffer[1] = x;
 			  TxBuffer[2] = y;
+			  TxBuffer[3] = start;
+			  TxBuffer[4] = shoot;
 		//	 TxBuffer[1] = position_degree & 0xff;
 		//	 TxBuffer[2] = (position_degree >> 8) & 0xff;
 
-			 TxBuffer[3] = '\n'; // /n
+			 TxBuffer[5] = '\n'; // /n
 			 //
-			 HAL_UART_Transmit_IT(&hlpuart1,TxBuffer,4);
+			 HAL_UART_Transmit_IT(&hlpuart1,TxBuffer,6);
 			 time = HAL_GetTick();
 	  }
 
@@ -348,7 +389,20 @@ void SPITxRx_readIO()
 		SPITx[1] = 0x12;
 		SPITx[2] = 0;
 		SPITx[3] = 0;
-		HAL_SPI_TransmitReceive_IT(&hspi3, SPITx, SPIRx, 4);
+		HAL_SPI_TransmitReceive_IT(&hspi3, SPITx, SPIRx2, 3);
+	}
+}
+
+void SPITxRx_writeIO()
+{
+	if(HAL_GPIO_ReadPin(GPIOD,GPIO_PIN_2))
+	{
+		HAL_GPIO_WritePin(GPIOD, GPIO_PIN_2, 0); // CS Select
+		SPITx[0] = 0b01000000;
+		SPITx[1] = 0x01;
+		SPITx[2] = ~LED;
+		SPITx[3] = 0;
+		HAL_SPI_TransmitReceive_IT(&hspi3, SPITx, SPIRx, 3);
 	}
 }
 void HAL_SPI_TxRxCpltCallback(SPI_HandleTypeDef *hspi)

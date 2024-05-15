@@ -19762,3 +19762,1460 @@ Finished building: default.size.stdout
  
 Finished building: T2_week9.list
  
+20:27:50 **** Incremental Build of configuration Debug for project T2_week9 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:105:3: warning: implicit declaration of function 'UART_con' [-Wimplicit-function-declaration]
+  105 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:106:3: warning: implicit declaration of function 'SPITxRx_Setup' [-Wimplicit-function-declaration]
+  106 |   SPITxRx_Setup();
+      |   ^~~~~~~~~~~~~
+../Core/Src/main.c:118:19: warning: implicit declaration of function 'SPITxRx_readIO' [-Wimplicit-function-declaration]
+  118 |                   SPITxRx_readIO();
+      |                   ^~~~~~~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:327:6: warning: conflicting types for 'UART_con'; have 'void()'
+  327 | void UART_con()
+      |      ^~~~~~~~
+../Core/Src/main.c:105:3: note: previous implicit declaration of 'UART_con' with type 'void()'
+  105 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:342:6: warning: conflicting types for 'SPITxRx_Setup'; have 'void()'
+  342 | void SPITxRx_Setup()
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c:106:3: note: previous implicit declaration of 'SPITxRx_Setup' with type 'void()'
+  106 |   SPITxRx_Setup();
+      |   ^~~~~~~~~~~~~
+../Core/Src/main.c:350:6: warning: conflicting types for 'SPITxRx_readIO'; have 'void()'
+  350 | void SPITxRx_readIO()
+      |      ^~~~~~~~~~~~~~
+../Core/Src/main.c:118:19: note: previous implicit declaration of 'SPITxRx_readIO' with type 'void()'
+  118 |                   SPITxRx_readIO();
+      |                   ^~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "T2_week9.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\T2_week9\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="T2_week9.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: T2_week9.elf
+ 
+arm-none-eabi-size  T2_week9.elf 
+arm-none-eabi-objdump -h -S T2_week9.elf  > "T2_week9.list"
+   text	   data	    bss	    dec	    hex	filename
+  21928	     12	   1864	  23804	   5cfc	T2_week9.elf
+Finished building: default.size.stdout
+ 
+Finished building: T2_week9.list
+ 
+23:00:39 **** Incremental Build of configuration Debug for project T2_week9 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:105:3: warning: implicit declaration of function 'UART_con' [-Wimplicit-function-declaration]
+  105 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:106:3: warning: implicit declaration of function 'SPITxRx_Setup' [-Wimplicit-function-declaration]
+  106 |   SPITxRx_Setup();
+      |   ^~~~~~~~~~~~~
+../Core/Src/main.c:118:19: warning: implicit declaration of function 'SPITxRx_readIO' [-Wimplicit-function-declaration]
+  118 |                   SPITxRx_readIO();
+      |                   ^~~~~~~~~~~~~~
+../Core/Src/main.c:120:27: error: switch quantity not an integer
+  120 |                   switch (SPIRx) {
+      |                           ^~~~~
+../Core/Src/main.c:125:19: error: duplicate case value
+  125 |                   case 13 :
+      |                   ^~~~
+../Core/Src/main.c:123:19: note: previously used here
+  123 |                   case 13 :
+      |                   ^~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:332:6: warning: conflicting types for 'UART_con'; have 'void()'
+  332 | void UART_con()
+      |      ^~~~~~~~
+../Core/Src/main.c:105:3: note: previous implicit declaration of 'UART_con' with type 'void()'
+  105 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:347:6: warning: conflicting types for 'SPITxRx_Setup'; have 'void()'
+  347 | void SPITxRx_Setup()
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c:106:3: note: previous implicit declaration of 'SPITxRx_Setup' with type 'void()'
+  106 |   SPITxRx_Setup();
+      |   ^~~~~~~~~~~~~
+../Core/Src/main.c:355:6: warning: conflicting types for 'SPITxRx_readIO'; have 'void()'
+  355 | void SPITxRx_readIO()
+      |      ^~~~~~~~~~~~~~
+../Core/Src/main.c:118:19: note: previous implicit declaration of 'SPITxRx_readIO' with type 'void()'
+  118 |                   SPITxRx_readIO();
+      |                   ^~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+23:00:59 **** Incremental Build of configuration Debug for project T2_week9 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:105:3: warning: implicit declaration of function 'UART_con' [-Wimplicit-function-declaration]
+  105 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:106:3: warning: implicit declaration of function 'SPITxRx_Setup' [-Wimplicit-function-declaration]
+  106 |   SPITxRx_Setup();
+      |   ^~~~~~~~~~~~~
+../Core/Src/main.c:118:19: warning: implicit declaration of function 'SPITxRx_readIO' [-Wimplicit-function-declaration]
+  118 |                   SPITxRx_readIO();
+      |                   ^~~~~~~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:332:6: warning: conflicting types for 'UART_con'; have 'void()'
+  332 | void UART_con()
+      |      ^~~~~~~~
+../Core/Src/main.c:105:3: note: previous implicit declaration of 'UART_con' with type 'void()'
+  105 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:347:6: warning: conflicting types for 'SPITxRx_Setup'; have 'void()'
+  347 | void SPITxRx_Setup()
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c:106:3: note: previous implicit declaration of 'SPITxRx_Setup' with type 'void()'
+  106 |   SPITxRx_Setup();
+      |   ^~~~~~~~~~~~~
+../Core/Src/main.c:355:6: warning: conflicting types for 'SPITxRx_readIO'; have 'void()'
+  355 | void SPITxRx_readIO()
+      |      ^~~~~~~~~~~~~~
+../Core/Src/main.c:118:19: note: previous implicit declaration of 'SPITxRx_readIO' with type 'void()'
+  118 |                   SPITxRx_readIO();
+      |                   ^~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "T2_week9.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\T2_week9\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="T2_week9.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: T2_week9.elf
+ 
+arm-none-eabi-size  T2_week9.elf 
+arm-none-eabi-objdump -h -S T2_week9.elf  > "T2_week9.list"
+   text	   data	    bss	    dec	    hex	filename
+  21928	     12	   1864	  23804	   5cfc	T2_week9.elf
+Finished building: default.size.stdout
+ 
+Finished building: T2_week9.list
+ 
+23:02:47 **** Incremental Build of configuration Debug for project T2_week9 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:105:3: warning: implicit declaration of function 'UART_con' [-Wimplicit-function-declaration]
+  105 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:106:3: warning: implicit declaration of function 'SPITxRx_Setup' [-Wimplicit-function-declaration]
+  106 |   SPITxRx_Setup();
+      |   ^~~~~~~~~~~~~
+../Core/Src/main.c:118:19: warning: implicit declaration of function 'SPITxRx_readIO' [-Wimplicit-function-declaration]
+  118 |                   SPITxRx_readIO();
+      |                   ^~~~~~~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:332:6: warning: conflicting types for 'UART_con'; have 'void()'
+  332 | void UART_con()
+      |      ^~~~~~~~
+../Core/Src/main.c:105:3: note: previous implicit declaration of 'UART_con' with type 'void()'
+  105 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:347:6: warning: conflicting types for 'SPITxRx_Setup'; have 'void()'
+  347 | void SPITxRx_Setup()
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c:106:3: note: previous implicit declaration of 'SPITxRx_Setup' with type 'void()'
+  106 |   SPITxRx_Setup();
+      |   ^~~~~~~~~~~~~
+../Core/Src/main.c:355:6: warning: conflicting types for 'SPITxRx_readIO'; have 'void()'
+  355 | void SPITxRx_readIO()
+      |      ^~~~~~~~~~~~~~
+../Core/Src/main.c:118:19: note: previous implicit declaration of 'SPITxRx_readIO' with type 'void()'
+  118 |                   SPITxRx_readIO();
+      |                   ^~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "T2_week9.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\T2_week9\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="T2_week9.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: T2_week9.elf
+ 
+arm-none-eabi-size  T2_week9.elf 
+arm-none-eabi-objdump -h -S T2_week9.elf  > "T2_week9.list"
+   text	   data	    bss	    dec	    hex	filename
+  21928	     12	   1864	  23804	   5cfc	T2_week9.elf
+Finished building: default.size.stdout
+ 
+Finished building: T2_week9.list
+ 
+23:21:16 **** Incremental Build of configuration Debug for project T2_week9 ****
+make -j16 all 
+arm-none-eabi-size  T2_week9.elf 
+   text	   data	    bss	    dec	    hex	filename
+  21928	     12	   1864	  23804	   5cfc	T2_week9.elf
+Finished building: default.size.stdout
+ 
+23:25:46 **** Incremental Build of configuration Debug for project T2_week9 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:105:3: warning: implicit declaration of function 'UART_con' [-Wimplicit-function-declaration]
+  105 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:106:3: warning: implicit declaration of function 'SPITxRx_Setup' [-Wimplicit-function-declaration]
+  106 |   SPITxRx_Setup();
+      |   ^~~~~~~~~~~~~
+../Core/Src/main.c:118:19: warning: implicit declaration of function 'SPITxRx_readIO' [-Wimplicit-function-declaration]
+  118 |                   SPITxRx_readIO();
+      |                   ^~~~~~~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:332:6: warning: conflicting types for 'UART_con'; have 'void()'
+  332 | void UART_con()
+      |      ^~~~~~~~
+../Core/Src/main.c:105:3: note: previous implicit declaration of 'UART_con' with type 'void()'
+  105 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:347:6: warning: conflicting types for 'SPITxRx_Setup'; have 'void()'
+  347 | void SPITxRx_Setup()
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c:106:3: note: previous implicit declaration of 'SPITxRx_Setup' with type 'void()'
+  106 |   SPITxRx_Setup();
+      |   ^~~~~~~~~~~~~
+../Core/Src/main.c:355:6: warning: conflicting types for 'SPITxRx_readIO'; have 'void()'
+  355 | void SPITxRx_readIO()
+      |      ^~~~~~~~~~~~~~
+../Core/Src/main.c:118:19: note: previous implicit declaration of 'SPITxRx_readIO' with type 'void()'
+  118 |                   SPITxRx_readIO();
+      |                   ^~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "T2_week9.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\T2_week9\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="T2_week9.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: T2_week9.elf
+ 
+arm-none-eabi-size  T2_week9.elf 
+arm-none-eabi-objdump -h -S T2_week9.elf  > "T2_week9.list"
+   text	   data	    bss	    dec	    hex	filename
+  21928	     12	   1864	  23804	   5cfc	T2_week9.elf
+Finished building: default.size.stdout
+ 
+Finished building: T2_week9.list
+ 
+23:27:34 **** Incremental Build of configuration Debug for project T2_week9 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:106:3: warning: implicit declaration of function 'UART_con' [-Wimplicit-function-declaration]
+  106 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:333:6: warning: conflicting types for 'UART_con'; have 'void()'
+  333 | void UART_con()
+      |      ^~~~~~~~
+../Core/Src/main.c:106:3: note: previous implicit declaration of 'UART_con' with type 'void()'
+  106 |   UART_con();
+      |   ^~~~~~~~
+arm-none-eabi-gcc -o "T2_week9.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\T2_week9\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="T2_week9.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: T2_week9.elf
+ 
+arm-none-eabi-size  T2_week9.elf 
+arm-none-eabi-objdump -h -S T2_week9.elf  > "T2_week9.list"
+   text	   data	    bss	    dec	    hex	filename
+  21928	     12	   1864	  23804	   5cfc	T2_week9.elf
+Finished building: default.size.stdout
+ 
+Finished building: T2_week9.list
+ 
+23:28:48 **** Incremental Build of configuration Debug for project T2_week9 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:106:3: warning: implicit declaration of function 'UART_con' [-Wimplicit-function-declaration]
+  106 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:334:6: warning: conflicting types for 'UART_con'; have 'void()'
+  334 | void UART_con()
+      |      ^~~~~~~~
+../Core/Src/main.c:106:3: note: previous implicit declaration of 'UART_con' with type 'void()'
+  106 |   UART_con();
+      |   ^~~~~~~~
+arm-none-eabi-gcc -o "T2_week9.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\T2_week9\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="T2_week9.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: T2_week9.elf
+ 
+arm-none-eabi-size  T2_week9.elf 
+arm-none-eabi-objdump -h -S T2_week9.elf  > "T2_week9.list"
+   text	   data	    bss	    dec	    hex	filename
+  21928	     12	   1864	  23804	   5cfc	T2_week9.elf
+Finished building: default.size.stdout
+ 
+Finished building: T2_week9.list
+ 
+23:29:37 **** Incremental Build of configuration Debug for project T2_week9 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:106:3: warning: implicit declaration of function 'UART_con' [-Wimplicit-function-declaration]
+  106 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:333:6: warning: conflicting types for 'UART_con'; have 'void()'
+  333 | void UART_con()
+      |      ^~~~~~~~
+../Core/Src/main.c:106:3: note: previous implicit declaration of 'UART_con' with type 'void()'
+  106 |   UART_con();
+      |   ^~~~~~~~
+arm-none-eabi-gcc -o "T2_week9.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\T2_week9\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="T2_week9.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: T2_week9.elf
+ 
+arm-none-eabi-size  T2_week9.elf 
+arm-none-eabi-objdump -h -S T2_week9.elf  > "T2_week9.list"
+   text	   data	    bss	    dec	    hex	filename
+  21928	     12	   1864	  23804	   5cfc	T2_week9.elf
+Finished building: default.size.stdout
+ 
+Finished building: T2_week9.list
+ 
+23:30:45 **** Incremental Build of configuration Debug for project T2_week9 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:106:3: warning: implicit declaration of function 'UART_con' [-Wimplicit-function-declaration]
+  106 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:333:6: warning: conflicting types for 'UART_con'; have 'void()'
+  333 | void UART_con()
+      |      ^~~~~~~~
+../Core/Src/main.c:106:3: note: previous implicit declaration of 'UART_con' with type 'void()'
+  106 |   UART_con();
+      |   ^~~~~~~~
+arm-none-eabi-gcc -o "T2_week9.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\T2_week9\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="T2_week9.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: T2_week9.elf
+ 
+arm-none-eabi-size  T2_week9.elf 
+arm-none-eabi-objdump -h -S T2_week9.elf  > "T2_week9.list"
+   text	   data	    bss	    dec	    hex	filename
+  21928	     12	   1864	  23804	   5cfc	T2_week9.elf
+Finished building: default.size.stdout
+ 
+Finished building: T2_week9.list
+ 
+23:31:29 **** Incremental Build of configuration Debug for project T2_week9 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:106:3: warning: implicit declaration of function 'UART_con' [-Wimplicit-function-declaration]
+  106 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:333:6: warning: conflicting types for 'UART_con'; have 'void()'
+  333 | void UART_con()
+      |      ^~~~~~~~
+../Core/Src/main.c:106:3: note: previous implicit declaration of 'UART_con' with type 'void()'
+  106 |   UART_con();
+      |   ^~~~~~~~
+arm-none-eabi-gcc -o "T2_week9.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\T2_week9\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="T2_week9.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: T2_week9.elf
+ 
+arm-none-eabi-size  T2_week9.elf 
+arm-none-eabi-objdump -h -S T2_week9.elf  > "T2_week9.list"
+   text	   data	    bss	    dec	    hex	filename
+  21928	     12	   1864	  23804	   5cfc	T2_week9.elf
+Finished building: default.size.stdout
+ 
+Finished building: T2_week9.list
+ 
+11:20:42 **** Incremental Build of configuration Debug for project T2_week9 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:106:3: warning: implicit declaration of function 'UART_con' [-Wimplicit-function-declaration]
+  106 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:333:6: warning: conflicting types for 'UART_con'; have 'void()'
+  333 | void UART_con()
+      |      ^~~~~~~~
+../Core/Src/main.c:106:3: note: previous implicit declaration of 'UART_con' with type 'void()'
+  106 |   UART_con();
+      |   ^~~~~~~~
+arm-none-eabi-gcc -o "T2_week9.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\T2_week9\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="T2_week9.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: T2_week9.elf
+ 
+arm-none-eabi-size  T2_week9.elf 
+arm-none-eabi-objdump -h -S T2_week9.elf  > "T2_week9.list"
+   text	   data	    bss	    dec	    hex	filename
+  21928	     12	   1864	  23804	   5cfc	T2_week9.elf
+Finished building: default.size.stdout
+ 
+Finished building: T2_week9.list
+ 
+11:22:34 **** Incremental Build of configuration Debug for project T2_week9 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:107:3: warning: implicit declaration of function 'UART_con' [-Wimplicit-function-declaration]
+  107 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:334:6: warning: conflicting types for 'UART_con'; have 'void()'
+  334 | void UART_con()
+      |      ^~~~~~~~
+../Core/Src/main.c:107:3: note: previous implicit declaration of 'UART_con' with type 'void()'
+  107 |   UART_con();
+      |   ^~~~~~~~
+arm-none-eabi-gcc -o "T2_week9.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\T2_week9\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="T2_week9.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: T2_week9.elf
+ 
+arm-none-eabi-size  T2_week9.elf 
+arm-none-eabi-objdump -h -S T2_week9.elf  > "T2_week9.list"
+   text	   data	    bss	    dec	    hex	filename
+  21936	     16	   1864	  23816	   5d08	T2_week9.elf
+Finished building: default.size.stdout
+ 
+Finished building: T2_week9.list
+ 
+11:24:02 **** Incremental Build of configuration Debug for project T2_week9 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:107:3: warning: implicit declaration of function 'UART_con' [-Wimplicit-function-declaration]
+  107 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:334:6: warning: conflicting types for 'UART_con'; have 'void()'
+  334 | void UART_con()
+      |      ^~~~~~~~
+../Core/Src/main.c:107:3: note: previous implicit declaration of 'UART_con' with type 'void()'
+  107 |   UART_con();
+      |   ^~~~~~~~
+arm-none-eabi-gcc -o "T2_week9.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\T2_week9\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="T2_week9.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: T2_week9.elf
+ 
+arm-none-eabi-size  T2_week9.elf 
+arm-none-eabi-objdump -h -S T2_week9.elf  > "T2_week9.list"
+   text	   data	    bss	    dec	    hex	filename
+  21940	     16	   1864	  23820	   5d0c	T2_week9.elf
+Finished building: default.size.stdout
+ 
+Finished building: T2_week9.list
+ 
+11:26:38 **** Incremental Build of configuration Debug for project T2_week9 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:107:3: warning: implicit declaration of function 'UART_con' [-Wimplicit-function-declaration]
+  107 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:122:19: warning: implicit declaration of function 'SPITxRx_writeIO'; did you mean 'SPITxRx_readIO'? [-Wimplicit-function-declaration]
+  122 |                   SPITxRx_writeIO();
+      |                   ^~~~~~~~~~~~~~~
+      |                   SPITxRx_readIO
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:336:6: warning: conflicting types for 'UART_con'; have 'void()'
+  336 | void UART_con()
+      |      ^~~~~~~~
+../Core/Src/main.c:107:3: note: previous implicit declaration of 'UART_con' with type 'void()'
+  107 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:372:6: warning: conflicting types for 'SPITxRx_writeIO'; have 'void()'
+  372 | void SPITxRx_writeIO()
+      |      ^~~~~~~~~~~~~~~
+../Core/Src/main.c:122:19: note: previous implicit declaration of 'SPITxRx_writeIO' with type 'void()'
+  122 |                   SPITxRx_writeIO();
+      |                   ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "T2_week9.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\T2_week9\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="T2_week9.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: T2_week9.elf
+ 
+arm-none-eabi-size  T2_week9.elf 
+arm-none-eabi-objdump -h -S T2_week9.elf  > "T2_week9.list"
+   text	   data	    bss	    dec	    hex	filename
+  22032	     16	   1864	  23912	   5d68	T2_week9.elf
+Finished building: default.size.stdout
+ 
+Finished building: T2_week9.list
+ 
+11:27:51 **** Incremental Build of configuration Debug for project T2_week9 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:107:3: warning: implicit declaration of function 'UART_con' [-Wimplicit-function-declaration]
+  107 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:122:19: warning: implicit declaration of function 'SPITxRx_writeIO'; did you mean 'SPITxRx_readIO'? [-Wimplicit-function-declaration]
+  122 |                   SPITxRx_writeIO();
+      |                   ^~~~~~~~~~~~~~~
+      |                   SPITxRx_readIO
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:336:6: warning: conflicting types for 'UART_con'; have 'void()'
+  336 | void UART_con()
+      |      ^~~~~~~~
+../Core/Src/main.c:107:3: note: previous implicit declaration of 'UART_con' with type 'void()'
+  107 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:372:6: warning: conflicting types for 'SPITxRx_writeIO'; have 'void()'
+  372 | void SPITxRx_writeIO()
+      |      ^~~~~~~~~~~~~~~
+../Core/Src/main.c:122:19: note: previous implicit declaration of 'SPITxRx_writeIO' with type 'void()'
+  122 |                   SPITxRx_writeIO();
+      |                   ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "T2_week9.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\T2_week9\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="T2_week9.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: T2_week9.elf
+ 
+arm-none-eabi-size  T2_week9.elf 
+arm-none-eabi-objdump -h -S T2_week9.elf  > "T2_week9.list"
+   text	   data	    bss	    dec	    hex	filename
+  22032	     16	   1864	  23912	   5d68	T2_week9.elf
+Finished building: default.size.stdout
+ 
+Finished building: T2_week9.list
+ 
+11:29:51 **** Incremental Build of configuration Debug for project T2_week9 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:107:3: warning: implicit declaration of function 'UART_con' [-Wimplicit-function-declaration]
+  107 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:122:19: warning: implicit declaration of function 'SPITxRx_writeIO'; did you mean 'SPITxRx_readIO'? [-Wimplicit-function-declaration]
+  122 |                   SPITxRx_writeIO();
+      |                   ^~~~~~~~~~~~~~~
+      |                   SPITxRx_readIO
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:337:6: warning: conflicting types for 'UART_con'; have 'void()'
+  337 | void UART_con()
+      |      ^~~~~~~~
+../Core/Src/main.c:107:3: note: previous implicit declaration of 'UART_con' with type 'void()'
+  107 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:373:6: warning: conflicting types for 'SPITxRx_writeIO'; have 'void()'
+  373 | void SPITxRx_writeIO()
+      |      ^~~~~~~~~~~~~~~
+../Core/Src/main.c:122:19: note: previous implicit declaration of 'SPITxRx_writeIO' with type 'void()'
+  122 |                   SPITxRx_writeIO();
+      |                   ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "T2_week9.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\T2_week9\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="T2_week9.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: T2_week9.elf
+ 
+arm-none-eabi-size  T2_week9.elf 
+arm-none-eabi-objdump -h -S T2_week9.elf  > "T2_week9.list"
+   text	   data	    bss	    dec	    hex	filename
+  22040	     16	   1864	  23920	   5d70	T2_week9.elf
+Finished building: default.size.stdout
+ 
+Finished building: T2_week9.list
+ 
+11:33:32 **** Incremental Build of configuration Debug for project T2_week9 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:107:3: warning: implicit declaration of function 'UART_con' [-Wimplicit-function-declaration]
+  107 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:122:19: warning: implicit declaration of function 'SPITxRx_writeIO'; did you mean 'SPITxRx_readIO'? [-Wimplicit-function-declaration]
+  122 |                   SPITxRx_writeIO();
+      |                   ^~~~~~~~~~~~~~~
+      |                   SPITxRx_readIO
+../Core/Src/main.c:125:27: error: switch quantity not an integer
+  125 |                   switch (SPIRx) {
+      |                           ^~~~~
+../Core/Src/main.c:132:19: error: duplicate case value
+  132 |                   case 13 :
+      |                   ^~~~
+../Core/Src/main.c:129:19: note: previously used here
+  129 |                   case 13 :
+      |                   ^~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:348:6: warning: conflicting types for 'UART_con'; have 'void()'
+  348 | void UART_con()
+      |      ^~~~~~~~
+../Core/Src/main.c:107:3: note: previous implicit declaration of 'UART_con' with type 'void()'
+  107 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:384:6: warning: conflicting types for 'SPITxRx_writeIO'; have 'void()'
+  384 | void SPITxRx_writeIO()
+      |      ^~~~~~~~~~~~~~~
+../Core/Src/main.c:122:19: note: previous implicit declaration of 'SPITxRx_writeIO' with type 'void()'
+  122 |                   SPITxRx_writeIO();
+      |                   ^~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+11:33:43 **** Incremental Build of configuration Debug for project T2_week9 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:107:3: warning: implicit declaration of function 'UART_con' [-Wimplicit-function-declaration]
+  107 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:122:19: warning: implicit declaration of function 'SPITxRx_writeIO'; did you mean 'SPITxRx_readIO'? [-Wimplicit-function-declaration]
+  122 |                   SPITxRx_writeIO();
+      |                   ^~~~~~~~~~~~~~~
+      |                   SPITxRx_readIO
+../Core/Src/main.c:132:19: error: duplicate case value
+  132 |                   case 13 :
+      |                   ^~~~
+../Core/Src/main.c:129:19: note: previously used here
+  129 |                   case 13 :
+      |                   ^~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:348:6: warning: conflicting types for 'UART_con'; have 'void()'
+  348 | void UART_con()
+      |      ^~~~~~~~
+../Core/Src/main.c:107:3: note: previous implicit declaration of 'UART_con' with type 'void()'
+  107 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:384:6: warning: conflicting types for 'SPITxRx_writeIO'; have 'void()'
+  384 | void SPITxRx_writeIO()
+      |      ^~~~~~~~~~~~~~~
+../Core/Src/main.c:122:19: note: previous implicit declaration of 'SPITxRx_writeIO' with type 'void()'
+  122 |                   SPITxRx_writeIO();
+      |                   ^~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+11:34:19 **** Incremental Build of configuration Debug for project T2_week9 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:107:3: warning: implicit declaration of function 'UART_con' [-Wimplicit-function-declaration]
+  107 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:122:19: warning: implicit declaration of function 'SPITxRx_writeIO'; did you mean 'SPITxRx_readIO'? [-Wimplicit-function-declaration]
+  122 |                   SPITxRx_writeIO();
+      |                   ^~~~~~~~~~~~~~~
+      |                   SPITxRx_readIO
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:348:6: warning: conflicting types for 'UART_con'; have 'void()'
+  348 | void UART_con()
+      |      ^~~~~~~~
+../Core/Src/main.c:107:3: note: previous implicit declaration of 'UART_con' with type 'void()'
+  107 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:384:6: warning: conflicting types for 'SPITxRx_writeIO'; have 'void()'
+  384 | void SPITxRx_writeIO()
+      |      ^~~~~~~~~~~~~~~
+../Core/Src/main.c:122:19: note: previous implicit declaration of 'SPITxRx_writeIO' with type 'void()'
+  122 |                   SPITxRx_writeIO();
+      |                   ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "T2_week9.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\T2_week9\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="T2_week9.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: T2_week9.elf
+ 
+arm-none-eabi-size  T2_week9.elf 
+arm-none-eabi-objdump -h -S T2_week9.elf  > "T2_week9.list"
+   text	   data	    bss	    dec	    hex	filename
+  22040	     16	   1864	  23920	   5d70	T2_week9.elf
+Finished building: default.size.stdout
+ 
+Finished building: T2_week9.list
+ 
+11:35:24 **** Incremental Build of configuration Debug for project T2_week9 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:107:3: warning: implicit declaration of function 'UART_con' [-Wimplicit-function-declaration]
+  107 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:122:19: warning: implicit declaration of function 'SPITxRx_writeIO'; did you mean 'SPITxRx_readIO'? [-Wimplicit-function-declaration]
+  122 |                   SPITxRx_writeIO();
+      |                   ^~~~~~~~~~~~~~~
+      |                   SPITxRx_readIO
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:346:6: warning: conflicting types for 'UART_con'; have 'void()'
+  346 | void UART_con()
+      |      ^~~~~~~~
+../Core/Src/main.c:107:3: note: previous implicit declaration of 'UART_con' with type 'void()'
+  107 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:382:6: warning: conflicting types for 'SPITxRx_writeIO'; have 'void()'
+  382 | void SPITxRx_writeIO()
+      |      ^~~~~~~~~~~~~~~
+../Core/Src/main.c:122:19: note: previous implicit declaration of 'SPITxRx_writeIO' with type 'void()'
+  122 |                   SPITxRx_writeIO();
+      |                   ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "T2_week9.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\T2_week9\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="T2_week9.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: T2_week9.elf
+ 
+arm-none-eabi-size  T2_week9.elf 
+arm-none-eabi-objdump -h -S T2_week9.elf  > "T2_week9.list"
+   text	   data	    bss	    dec	    hex	filename
+  22132	     16	   1864	  24012	   5dcc	T2_week9.elf
+Finished building: default.size.stdout
+ 
+Finished building: T2_week9.list
+ 
+11:36:35 **** Incremental Build of configuration Debug for project T2_week9 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:107:3: warning: implicit declaration of function 'UART_con' [-Wimplicit-function-declaration]
+  107 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:122:19: warning: implicit declaration of function 'SPITxRx_writeIO'; did you mean 'SPITxRx_readIO'? [-Wimplicit-function-declaration]
+  122 |                   SPITxRx_writeIO();
+      |                   ^~~~~~~~~~~~~~~
+      |                   SPITxRx_readIO
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:347:6: warning: conflicting types for 'UART_con'; have 'void()'
+  347 | void UART_con()
+      |      ^~~~~~~~
+../Core/Src/main.c:107:3: note: previous implicit declaration of 'UART_con' with type 'void()'
+  107 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:383:6: warning: conflicting types for 'SPITxRx_writeIO'; have 'void()'
+  383 | void SPITxRx_writeIO()
+      |      ^~~~~~~~~~~~~~~
+../Core/Src/main.c:122:19: note: previous implicit declaration of 'SPITxRx_writeIO' with type 'void()'
+  122 |                   SPITxRx_writeIO();
+      |                   ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "T2_week9.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\T2_week9\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="T2_week9.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: T2_week9.elf
+ 
+arm-none-eabi-size  T2_week9.elf 
+arm-none-eabi-objdump -h -S T2_week9.elf  > "T2_week9.list"
+   text	   data	    bss	    dec	    hex	filename
+  22136	     16	   1864	  24016	   5dd0	T2_week9.elf
+Finished building: default.size.stdout
+ 
+Finished building: T2_week9.list
+ 
+11:38:53 **** Incremental Build of configuration Debug for project T2_week9 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:107:3: warning: implicit declaration of function 'UART_con' [-Wimplicit-function-declaration]
+  107 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:122:19: warning: implicit declaration of function 'SPITxRx_writeIO'; did you mean 'SPITxRx_readIO'? [-Wimplicit-function-declaration]
+  122 |                   SPITxRx_writeIO();
+      |                   ^~~~~~~~~~~~~~~
+      |                   SPITxRx_readIO
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:347:6: warning: conflicting types for 'UART_con'; have 'void()'
+  347 | void UART_con()
+      |      ^~~~~~~~
+../Core/Src/main.c:107:3: note: previous implicit declaration of 'UART_con' with type 'void()'
+  107 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:383:6: warning: conflicting types for 'SPITxRx_writeIO'; have 'void()'
+  383 | void SPITxRx_writeIO()
+      |      ^~~~~~~~~~~~~~~
+../Core/Src/main.c:122:19: note: previous implicit declaration of 'SPITxRx_writeIO' with type 'void()'
+  122 |                   SPITxRx_writeIO();
+      |                   ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "T2_week9.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\T2_week9\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="T2_week9.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: T2_week9.elf
+ 
+arm-none-eabi-size  T2_week9.elf 
+arm-none-eabi-objdump -h -S T2_week9.elf  > "T2_week9.list"
+   text	   data	    bss	    dec	    hex	filename
+  22696	     16	   1864	  24576	   6000	T2_week9.elf
+Finished building: default.size.stdout
+ 
+Finished building: T2_week9.list
+ 
+11:39:56 **** Incremental Build of configuration Debug for project T2_week9 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:107:3: warning: implicit declaration of function 'UART_con' [-Wimplicit-function-declaration]
+  107 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:122:19: warning: implicit declaration of function 'SPITxRx_writeIO'; did you mean 'SPITxRx_readIO'? [-Wimplicit-function-declaration]
+  122 |                   SPITxRx_writeIO();
+      |                   ^~~~~~~~~~~~~~~
+      |                   SPITxRx_readIO
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:347:6: warning: conflicting types for 'UART_con'; have 'void()'
+  347 | void UART_con()
+      |      ^~~~~~~~
+../Core/Src/main.c:107:3: note: previous implicit declaration of 'UART_con' with type 'void()'
+  107 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:383:6: warning: conflicting types for 'SPITxRx_writeIO'; have 'void()'
+  383 | void SPITxRx_writeIO()
+      |      ^~~~~~~~~~~~~~~
+../Core/Src/main.c:122:19: note: previous implicit declaration of 'SPITxRx_writeIO' with type 'void()'
+  122 |                   SPITxRx_writeIO();
+      |                   ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "T2_week9.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\T2_week9\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="T2_week9.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: T2_week9.elf
+ 
+arm-none-eabi-size  T2_week9.elf 
+arm-none-eabi-objdump -h -S T2_week9.elf  > "T2_week9.list"
+   text	   data	    bss	    dec	    hex	filename
+  22136	     16	   1864	  24016	   5dd0	T2_week9.elf
+Finished building: default.size.stdout
+ 
+Finished building: T2_week9.list
+ 
+11:40:29 **** Incremental Build of configuration Debug for project T2_week9 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:107:3: warning: implicit declaration of function 'UART_con' [-Wimplicit-function-declaration]
+  107 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:122:19: warning: implicit declaration of function 'SPITxRx_writeIO'; did you mean 'SPITxRx_readIO'? [-Wimplicit-function-declaration]
+  122 |                   SPITxRx_writeIO();
+      |                   ^~~~~~~~~~~~~~~
+      |                   SPITxRx_readIO
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:347:6: warning: conflicting types for 'UART_con'; have 'void()'
+  347 | void UART_con()
+      |      ^~~~~~~~
+../Core/Src/main.c:107:3: note: previous implicit declaration of 'UART_con' with type 'void()'
+  107 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:383:6: warning: conflicting types for 'SPITxRx_writeIO'; have 'void()'
+  383 | void SPITxRx_writeIO()
+      |      ^~~~~~~~~~~~~~~
+../Core/Src/main.c:122:19: note: previous implicit declaration of 'SPITxRx_writeIO' with type 'void()'
+  122 |                   SPITxRx_writeIO();
+      |                   ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "T2_week9.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\T2_week9\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="T2_week9.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: T2_week9.elf
+ 
+arm-none-eabi-size  T2_week9.elf 
+arm-none-eabi-objdump -h -S T2_week9.elf  > "T2_week9.list"
+   text	   data	    bss	    dec	    hex	filename
+  22040	     16	   1864	  23920	   5d70	T2_week9.elf
+Finished building: default.size.stdout
+ 
+Finished building: T2_week9.list
+ 
+11:42:47 **** Incremental Build of configuration Debug for project T2_week9 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:107:3: warning: implicit declaration of function 'UART_con' [-Wimplicit-function-declaration]
+  107 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:122:19: warning: implicit declaration of function 'SPITxRx_writeIO'; did you mean 'SPITxRx_readIO'? [-Wimplicit-function-declaration]
+  122 |                   SPITxRx_writeIO();
+      |                   ^~~~~~~~~~~~~~~
+      |                   SPITxRx_readIO
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:364:6: warning: conflicting types for 'UART_con'; have 'void()'
+  364 | void UART_con()
+      |      ^~~~~~~~
+../Core/Src/main.c:107:3: note: previous implicit declaration of 'UART_con' with type 'void()'
+  107 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:400:6: warning: conflicting types for 'SPITxRx_writeIO'; have 'void()'
+  400 | void SPITxRx_writeIO()
+      |      ^~~~~~~~~~~~~~~
+../Core/Src/main.c:122:19: note: previous implicit declaration of 'SPITxRx_writeIO' with type 'void()'
+  122 |                   SPITxRx_writeIO();
+      |                   ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "T2_week9.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\T2_week9\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="T2_week9.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: T2_week9.elf
+ 
+arm-none-eabi-size  T2_week9.elf 
+arm-none-eabi-objdump -h -S T2_week9.elf  > "T2_week9.list"
+   text	   data	    bss	    dec	    hex	filename
+  22108	     16	   1864	  23988	   5db4	T2_week9.elf
+Finished building: default.size.stdout
+ 
+Finished building: T2_week9.list
+ 
+11:44:38 **** Incremental Build of configuration Debug for project T2_week9 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:107:3: warning: implicit declaration of function 'UART_con' [-Wimplicit-function-declaration]
+  107 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:122:19: warning: implicit declaration of function 'SPITxRx_writeIO'; did you mean 'SPITxRx_readIO'? [-Wimplicit-function-declaration]
+  122 |                   SPITxRx_writeIO();
+      |                   ^~~~~~~~~~~~~~~
+      |                   SPITxRx_readIO
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:364:6: warning: conflicting types for 'UART_con'; have 'void()'
+  364 | void UART_con()
+      |      ^~~~~~~~
+../Core/Src/main.c:107:3: note: previous implicit declaration of 'UART_con' with type 'void()'
+  107 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:400:6: warning: conflicting types for 'SPITxRx_writeIO'; have 'void()'
+  400 | void SPITxRx_writeIO()
+      |      ^~~~~~~~~~~~~~~
+../Core/Src/main.c:122:19: note: previous implicit declaration of 'SPITxRx_writeIO' with type 'void()'
+  122 |                   SPITxRx_writeIO();
+      |                   ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "T2_week9.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\T2_week9\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="T2_week9.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: T2_week9.elf
+ 
+arm-none-eabi-size  T2_week9.elf 
+arm-none-eabi-objdump -h -S T2_week9.elf  > "T2_week9.list"
+   text	   data	    bss	    dec	    hex	filename
+  22108	     16	   1864	  23988	   5db4	T2_week9.elf
+Finished building: default.size.stdout
+ 
+Finished building: T2_week9.list
+ 
+11:45:50 **** Incremental Build of configuration Debug for project T2_week9 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:107:3: warning: implicit declaration of function 'UART_con' [-Wimplicit-function-declaration]
+  107 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:122:19: warning: implicit declaration of function 'SPITxRx_writeIO'; did you mean 'SPITxRx_readIO'? [-Wimplicit-function-declaration]
+  122 |                   SPITxRx_writeIO();
+      |                   ^~~~~~~~~~~~~~~
+      |                   SPITxRx_readIO
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:334:6: warning: conflicting types for 'UART_con'; have 'void()'
+  334 | void UART_con()
+      |      ^~~~~~~~
+../Core/Src/main.c:107:3: note: previous implicit declaration of 'UART_con' with type 'void()'
+  107 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:370:6: warning: conflicting types for 'SPITxRx_writeIO'; have 'void()'
+  370 | void SPITxRx_writeIO()
+      |      ^~~~~~~~~~~~~~~
+../Core/Src/main.c:122:19: note: previous implicit declaration of 'SPITxRx_writeIO' with type 'void()'
+  122 |                   SPITxRx_writeIO();
+      |                   ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "T2_week9.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\T2_week9\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="T2_week9.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: T2_week9.elf
+ 
+arm-none-eabi-size  T2_week9.elf 
+arm-none-eabi-objdump -h -S T2_week9.elf  > "T2_week9.list"
+   text	   data	    bss	    dec	    hex	filename
+  22056	     16	   1864	  23936	   5d80	T2_week9.elf
+Finished building: default.size.stdout
+ 
+Finished building: T2_week9.list
+ 
+11:56:28 **** Incremental Build of configuration Debug for project T2_week9 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:107:3: warning: implicit declaration of function 'UART_con' [-Wimplicit-function-declaration]
+  107 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:128:27: warning: implicit declaration of function 'SPITxRx_writeIO'; did you mean 'SPITxRx_readIO'? [-Wimplicit-function-declaration]
+  128 |                           SPITxRx_writeIO();
+      |                           ^~~~~~~~~~~~~~~
+      |                           SPITxRx_readIO
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:336:6: warning: conflicting types for 'UART_con'; have 'void()'
+  336 | void UART_con()
+      |      ^~~~~~~~
+../Core/Src/main.c:107:3: note: previous implicit declaration of 'UART_con' with type 'void()'
+  107 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:372:6: warning: conflicting types for 'SPITxRx_writeIO'; have 'void()'
+  372 | void SPITxRx_writeIO()
+      |      ^~~~~~~~~~~~~~~
+../Core/Src/main.c:128:27: note: previous implicit declaration of 'SPITxRx_writeIO' with type 'void()'
+  128 |                           SPITxRx_writeIO();
+      |                           ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "T2_week9.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\T2_week9\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="T2_week9.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: T2_week9.elf
+ 
+arm-none-eabi-size  T2_week9.elf 
+arm-none-eabi-objdump -h -S T2_week9.elf  > "T2_week9.list"
+   text	   data	    bss	    dec	    hex	filename
+  22056	     16	   1864	  23936	   5d80	T2_week9.elf
+Finished building: default.size.stdout
+ 
+Finished building: T2_week9.list
+ 
+11:56:49 **** Incremental Build of configuration Debug for project T2_week9 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:107:3: warning: implicit declaration of function 'UART_con' [-Wimplicit-function-declaration]
+  107 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:128:27: warning: implicit declaration of function 'SPITxRx_writeIO'; did you mean 'SPITxRx_readIO'? [-Wimplicit-function-declaration]
+  128 |                           SPITxRx_writeIO();
+      |                           ^~~~~~~~~~~~~~~
+      |                           SPITxRx_readIO
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:337:6: warning: conflicting types for 'UART_con'; have 'void()'
+  337 | void UART_con()
+      |      ^~~~~~~~
+../Core/Src/main.c:107:3: note: previous implicit declaration of 'UART_con' with type 'void()'
+  107 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:373:6: warning: conflicting types for 'SPITxRx_writeIO'; have 'void()'
+  373 | void SPITxRx_writeIO()
+      |      ^~~~~~~~~~~~~~~
+../Core/Src/main.c:128:27: note: previous implicit declaration of 'SPITxRx_writeIO' with type 'void()'
+  128 |                           SPITxRx_writeIO();
+      |                           ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "T2_week9.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\T2_week9\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="T2_week9.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: T2_week9.elf
+ 
+arm-none-eabi-size  T2_week9.elf 
+arm-none-eabi-objdump -h -S T2_week9.elf  > "T2_week9.list"
+   text	   data	    bss	    dec	    hex	filename
+  22056	     16	   1864	  23936	   5d80	T2_week9.elf
+Finished building: default.size.stdout
+ 
+Finished building: T2_week9.list
+ 
+11:57:30 **** Incremental Build of configuration Debug for project T2_week9 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:107:3: warning: implicit declaration of function 'UART_con' [-Wimplicit-function-declaration]
+  107 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:122:19: warning: implicit declaration of function 'SPITxRx_writeIO'; did you mean 'SPITxRx_readIO'? [-Wimplicit-function-declaration]
+  122 |                   SPITxRx_writeIO();
+      |                   ^~~~~~~~~~~~~~~
+      |                   SPITxRx_readIO
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:336:6: warning: conflicting types for 'UART_con'; have 'void()'
+  336 | void UART_con()
+      |      ^~~~~~~~
+../Core/Src/main.c:107:3: note: previous implicit declaration of 'UART_con' with type 'void()'
+  107 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:372:6: warning: conflicting types for 'SPITxRx_writeIO'; have 'void()'
+  372 | void SPITxRx_writeIO()
+      |      ^~~~~~~~~~~~~~~
+../Core/Src/main.c:122:19: note: previous implicit declaration of 'SPITxRx_writeIO' with type 'void()'
+  122 |                   SPITxRx_writeIO();
+      |                   ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "T2_week9.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\T2_week9\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="T2_week9.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: T2_week9.elf
+ 
+arm-none-eabi-size  T2_week9.elf 
+arm-none-eabi-objdump -h -S T2_week9.elf  > "T2_week9.list"
+   text	   data	    bss	    dec	    hex	filename
+  22056	     16	   1864	  23936	   5d80	T2_week9.elf
+Finished building: default.size.stdout
+ 
+Finished building: T2_week9.list
+ 
+11:58:06 **** Incremental Build of configuration Debug for project T2_week9 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:107:3: warning: implicit declaration of function 'UART_con' [-Wimplicit-function-declaration]
+  107 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:122:19: warning: implicit declaration of function 'SPITxRx_writeIO'; did you mean 'SPITxRx_readIO'? [-Wimplicit-function-declaration]
+  122 |                   SPITxRx_writeIO();
+      |                   ^~~~~~~~~~~~~~~
+      |                   SPITxRx_readIO
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:338:6: warning: conflicting types for 'UART_con'; have 'void()'
+  338 | void UART_con()
+      |      ^~~~~~~~
+../Core/Src/main.c:107:3: note: previous implicit declaration of 'UART_con' with type 'void()'
+  107 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:374:6: warning: conflicting types for 'SPITxRx_writeIO'; have 'void()'
+  374 | void SPITxRx_writeIO()
+      |      ^~~~~~~~~~~~~~~
+../Core/Src/main.c:122:19: note: previous implicit declaration of 'SPITxRx_writeIO' with type 'void()'
+  122 |                   SPITxRx_writeIO();
+      |                   ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "T2_week9.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\T2_week9\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="T2_week9.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: T2_week9.elf
+ 
+arm-none-eabi-size  T2_week9.elf 
+arm-none-eabi-objdump -h -S T2_week9.elf  > "T2_week9.list"
+   text	   data	    bss	    dec	    hex	filename
+  22064	     16	   1864	  23944	   5d88	T2_week9.elf
+Finished building: default.size.stdout
+ 
+Finished building: T2_week9.list
+ 
+12:00:49 **** Incremental Build of configuration Debug for project T2_week9 ****
+make -j16 all 
+arm-none-eabi-size  T2_week9.elf 
+   text	   data	    bss	    dec	    hex	filename
+  22064	     16	   1864	  23944	   5d88	T2_week9.elf
+Finished building: default.size.stdout
+ 
+12:01:25 **** Incremental Build of configuration Debug for project T2_week9 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:107:3: warning: implicit declaration of function 'UART_con' [-Wimplicit-function-declaration]
+  107 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:122:19: warning: implicit declaration of function 'SPITxRx_writeIO'; did you mean 'SPITxRx_readIO'? [-Wimplicit-function-declaration]
+  122 |                   SPITxRx_writeIO();
+      |                   ^~~~~~~~~~~~~~~
+      |                   SPITxRx_readIO
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:338:6: warning: conflicting types for 'UART_con'; have 'void()'
+  338 | void UART_con()
+      |      ^~~~~~~~
+../Core/Src/main.c:107:3: note: previous implicit declaration of 'UART_con' with type 'void()'
+  107 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:374:6: warning: conflicting types for 'SPITxRx_writeIO'; have 'void()'
+  374 | void SPITxRx_writeIO()
+      |      ^~~~~~~~~~~~~~~
+../Core/Src/main.c:122:19: note: previous implicit declaration of 'SPITxRx_writeIO' with type 'void()'
+  122 |                   SPITxRx_writeIO();
+      |                   ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "T2_week9.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\T2_week9\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="T2_week9.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: T2_week9.elf
+ 
+arm-none-eabi-size  T2_week9.elf 
+arm-none-eabi-objdump -h -S T2_week9.elf  > "T2_week9.list"
+   text	   data	    bss	    dec	    hex	filename
+  22064	     16	   1864	  23944	   5d88	T2_week9.elf
+Finished building: default.size.stdout
+ 
+Finished building: T2_week9.list
+ 
+12:05:18 **** Incremental Build of configuration Debug for project T2_week9 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:107:3: warning: implicit declaration of function 'UART_con' [-Wimplicit-function-declaration]
+  107 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:122:19: warning: implicit declaration of function 'SPITxRx_writeIO'; did you mean 'SPITxRx_readIO'? [-Wimplicit-function-declaration]
+  122 |                   SPITxRx_writeIO();
+      |                   ^~~~~~~~~~~~~~~
+      |                   SPITxRx_readIO
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:342:6: warning: conflicting types for 'UART_con'; have 'void()'
+  342 | void UART_con()
+      |      ^~~~~~~~
+../Core/Src/main.c:107:3: note: previous implicit declaration of 'UART_con' with type 'void()'
+  107 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:378:6: warning: conflicting types for 'SPITxRx_writeIO'; have 'void()'
+  378 | void SPITxRx_writeIO()
+      |      ^~~~~~~~~~~~~~~
+../Core/Src/main.c:122:19: note: previous implicit declaration of 'SPITxRx_writeIO' with type 'void()'
+  122 |                   SPITxRx_writeIO();
+      |                   ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "T2_week9.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\T2_week9\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="T2_week9.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: T2_week9.elf
+ 
+arm-none-eabi-size  T2_week9.elf 
+arm-none-eabi-objdump -h -S T2_week9.elf  > "T2_week9.list"
+   text	   data	    bss	    dec	    hex	filename
+  22084	     16	   1864	  23964	   5d9c	T2_week9.elf
+Finished building: default.size.stdout
+ 
+Finished building: T2_week9.list
+ 
+12:07:25 **** Incremental Build of configuration Debug for project T2_week9 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:107:3: warning: implicit declaration of function 'UART_con' [-Wimplicit-function-declaration]
+  107 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:342:6: warning: conflicting types for 'UART_con'; have 'void()'
+  342 | void UART_con()
+      |      ^~~~~~~~
+../Core/Src/main.c:107:3: note: previous implicit declaration of 'UART_con' with type 'void()'
+  107 |   UART_con();
+      |   ^~~~~~~~
+arm-none-eabi-gcc -o "T2_week9.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\T2_week9\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="T2_week9.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: T2_week9.elf
+ 
+arm-none-eabi-size  T2_week9.elf 
+arm-none-eabi-objdump -h -S T2_week9.elf  > "T2_week9.list"
+   text	   data	    bss	    dec	    hex	filename
+  21972	     16	   1864	  23852	   5d2c	T2_week9.elf
+Finished building: default.size.stdout
+ 
+Finished building: T2_week9.list
+ 
+12:08:35 **** Incremental Build of configuration Debug for project T2_week9 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:108:3: warning: implicit declaration of function 'UART_con' [-Wimplicit-function-declaration]
+  108 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:343:6: warning: conflicting types for 'UART_con'; have 'void()'
+  343 | void UART_con()
+      |      ^~~~~~~~
+../Core/Src/main.c:108:3: note: previous implicit declaration of 'UART_con' with type 'void()'
+  108 |   UART_con();
+      |   ^~~~~~~~
+arm-none-eabi-gcc -o "T2_week9.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\T2_week9\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="T2_week9.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: T2_week9.elf
+ 
+arm-none-eabi-size  T2_week9.elf 
+arm-none-eabi-objdump -h -S T2_week9.elf  > "T2_week9.list"
+   text	   data	    bss	    dec	    hex	filename
+  21972	     16	   1880	  23868	   5d3c	T2_week9.elf
+Finished building: default.size.stdout
+ 
+Finished building: T2_week9.list
+ 
+12:09:09 **** Incremental Build of configuration Debug for project T2_week9 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:108:3: warning: implicit declaration of function 'UART_con' [-Wimplicit-function-declaration]
+  108 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:123:19: warning: implicit declaration of function 'SPITxRx_writeIO'; did you mean 'SPITxRx_readIO'? [-Wimplicit-function-declaration]
+  123 |                   SPITxRx_writeIO();
+      |                   ^~~~~~~~~~~~~~~
+      |                   SPITxRx_readIO
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:343:6: warning: conflicting types for 'UART_con'; have 'void()'
+  343 | void UART_con()
+      |      ^~~~~~~~
+../Core/Src/main.c:108:3: note: previous implicit declaration of 'UART_con' with type 'void()'
+  108 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:379:6: warning: conflicting types for 'SPITxRx_writeIO'; have 'void()'
+  379 | void SPITxRx_writeIO()
+      |      ^~~~~~~~~~~~~~~
+../Core/Src/main.c:123:19: note: previous implicit declaration of 'SPITxRx_writeIO' with type 'void()'
+  123 |                   SPITxRx_writeIO();
+      |                   ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "T2_week9.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\T2_week9\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="T2_week9.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: T2_week9.elf
+ 
+arm-none-eabi-size  T2_week9.elf 
+arm-none-eabi-objdump -h -S T2_week9.elf  > "T2_week9.list"
+   text	   data	    bss	    dec	    hex	filename
+  22072	     16	   1880	  23968	   5da0	T2_week9.elf
+Finished building: default.size.stdout
+ 
+Finished building: T2_week9.list
+ 
+12:09:40 **** Incremental Build of configuration Debug for project T2_week9 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:108:3: warning: implicit declaration of function 'UART_con' [-Wimplicit-function-declaration]
+  108 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:123:19: warning: implicit declaration of function 'SPITxRx_writeIO'; did you mean 'SPITxRx_readIO'? [-Wimplicit-function-declaration]
+  123 |                   SPITxRx_writeIO();
+      |                   ^~~~~~~~~~~~~~~
+      |                   SPITxRx_readIO
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:343:6: warning: conflicting types for 'UART_con'; have 'void()'
+  343 | void UART_con()
+      |      ^~~~~~~~
+../Core/Src/main.c:108:3: note: previous implicit declaration of 'UART_con' with type 'void()'
+  108 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:379:6: warning: conflicting types for 'SPITxRx_writeIO'; have 'void()'
+  379 | void SPITxRx_writeIO()
+      |      ^~~~~~~~~~~~~~~
+../Core/Src/main.c:123:19: note: previous implicit declaration of 'SPITxRx_writeIO' with type 'void()'
+  123 |                   SPITxRx_writeIO();
+      |                   ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "T2_week9.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\T2_week9\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="T2_week9.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: T2_week9.elf
+ 
+arm-none-eabi-size  T2_week9.elf 
+arm-none-eabi-objdump -h -S T2_week9.elf  > "T2_week9.list"
+   text	   data	    bss	    dec	    hex	filename
+  22072	     16	   1880	  23968	   5da0	T2_week9.elf
+Finished building: default.size.stdout
+ 
+Finished building: T2_week9.list
+ 
+12:21:23 **** Incremental Build of configuration Debug for project T2_week9 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:108:3: warning: implicit declaration of function 'UART_con' [-Wimplicit-function-declaration]
+  108 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:123:19: warning: implicit declaration of function 'SPITxRx_writeIO'; did you mean 'SPITxRx_readIO'? [-Wimplicit-function-declaration]
+  123 |                   SPITxRx_writeIO();
+      |                   ^~~~~~~~~~~~~~~
+      |                   SPITxRx_readIO
+../Core/Src/main.c:126:26: error: switch quantity not an integer
+  126 |                  switch (SPIRx2) {
+      |                          ^~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:348:6: warning: conflicting types for 'UART_con'; have 'void()'
+  348 | void UART_con()
+      |      ^~~~~~~~
+../Core/Src/main.c:108:3: note: previous implicit declaration of 'UART_con' with type 'void()'
+  108 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:384:6: warning: conflicting types for 'SPITxRx_writeIO'; have 'void()'
+  384 | void SPITxRx_writeIO()
+      |      ^~~~~~~~~~~~~~~
+../Core/Src/main.c:123:19: note: previous implicit declaration of 'SPITxRx_writeIO' with type 'void()'
+  123 |                   SPITxRx_writeIO();
+      |                   ^~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+12:21:30 **** Incremental Build of configuration Debug for project T2_week9 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:108:3: warning: implicit declaration of function 'UART_con' [-Wimplicit-function-declaration]
+  108 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:123:19: warning: implicit declaration of function 'SPITxRx_writeIO'; did you mean 'SPITxRx_readIO'? [-Wimplicit-function-declaration]
+  123 |                   SPITxRx_writeIO();
+      |                   ^~~~~~~~~~~~~~~
+      |                   SPITxRx_readIO
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:348:6: warning: conflicting types for 'UART_con'; have 'void()'
+  348 | void UART_con()
+      |      ^~~~~~~~
+../Core/Src/main.c:108:3: note: previous implicit declaration of 'UART_con' with type 'void()'
+  108 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:384:6: warning: conflicting types for 'SPITxRx_writeIO'; have 'void()'
+  384 | void SPITxRx_writeIO()
+      |      ^~~~~~~~~~~~~~~
+../Core/Src/main.c:123:19: note: previous implicit declaration of 'SPITxRx_writeIO' with type 'void()'
+  123 |                   SPITxRx_writeIO();
+      |                   ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "T2_week9.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\T2_week9\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="T2_week9.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: T2_week9.elf
+ 
+arm-none-eabi-size  T2_week9.elf 
+arm-none-eabi-objdump -h -S T2_week9.elf  > "T2_week9.list"
+   text	   data	    bss	    dec	    hex	filename
+  22120	     16	   1880	  24016	   5dd0	T2_week9.elf
+Finished building: default.size.stdout
+ 
+Finished building: T2_week9.list
+ 
+12:22:07 **** Incremental Build of configuration Debug for project T2_week9 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:108:3: warning: implicit declaration of function 'UART_con' [-Wimplicit-function-declaration]
+  108 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:123:19: warning: implicit declaration of function 'SPITxRx_writeIO'; did you mean 'SPITxRx_readIO'? [-Wimplicit-function-declaration]
+  123 |                   SPITxRx_writeIO();
+      |                   ^~~~~~~~~~~~~~~
+      |                   SPITxRx_readIO
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:348:6: warning: conflicting types for 'UART_con'; have 'void()'
+  348 | void UART_con()
+      |      ^~~~~~~~
+../Core/Src/main.c:108:3: note: previous implicit declaration of 'UART_con' with type 'void()'
+  108 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:384:6: warning: conflicting types for 'SPITxRx_writeIO'; have 'void()'
+  384 | void SPITxRx_writeIO()
+      |      ^~~~~~~~~~~~~~~
+../Core/Src/main.c:123:19: note: previous implicit declaration of 'SPITxRx_writeIO' with type 'void()'
+  123 |                   SPITxRx_writeIO();
+      |                   ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "T2_week9.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\T2_week9\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="T2_week9.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: T2_week9.elf
+ 
+arm-none-eabi-size  T2_week9.elf 
+arm-none-eabi-objdump -h -S T2_week9.elf  > "T2_week9.list"
+   text	   data	    bss	    dec	    hex	filename
+  22124	     16	   1880	  24020	   5dd4	T2_week9.elf
+Finished building: default.size.stdout
+ 
+Finished building: T2_week9.list
+ 
+12:37:30 **** Incremental Build of configuration Debug for project T2_week9 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:108:3: warning: implicit declaration of function 'UART_con' [-Wimplicit-function-declaration]
+  108 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:123:19: warning: implicit declaration of function 'SPITxRx_writeIO'; did you mean 'SPITxRx_readIO'? [-Wimplicit-function-declaration]
+  123 |                   SPITxRx_writeIO();
+      |                   ^~~~~~~~~~~~~~~
+      |                   SPITxRx_readIO
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:348:6: warning: conflicting types for 'UART_con'; have 'void()'
+  348 | void UART_con()
+      |      ^~~~~~~~
+../Core/Src/main.c:108:3: note: previous implicit declaration of 'UART_con' with type 'void()'
+  108 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:384:6: warning: conflicting types for 'SPITxRx_writeIO'; have 'void()'
+  384 | void SPITxRx_writeIO()
+      |      ^~~~~~~~~~~~~~~
+../Core/Src/main.c:123:19: note: previous implicit declaration of 'SPITxRx_writeIO' with type 'void()'
+  123 |                   SPITxRx_writeIO();
+      |                   ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "T2_week9.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\T2_week9\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="T2_week9.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: T2_week9.elf
+ 
+arm-none-eabi-size  T2_week9.elf 
+arm-none-eabi-objdump -h -S T2_week9.elf  > "T2_week9.list"
+   text	   data	    bss	    dec	    hex	filename
+  22124	     16	   1880	  24020	   5dd4	T2_week9.elf
+Finished building: default.size.stdout
+ 
+Finished building: T2_week9.list
+ 
+12:39:51 **** Incremental Build of configuration Debug for project T2_week9 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:108:3: warning: implicit declaration of function 'UART_con' [-Wimplicit-function-declaration]
+  108 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:123:19: warning: implicit declaration of function 'SPITxRx_writeIO'; did you mean 'SPITxRx_readIO'? [-Wimplicit-function-declaration]
+  123 |                   SPITxRx_writeIO();
+      |                   ^~~~~~~~~~~~~~~
+      |                   SPITxRx_readIO
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:356:6: warning: conflicting types for 'UART_con'; have 'void()'
+  356 | void UART_con()
+      |      ^~~~~~~~
+../Core/Src/main.c:108:3: note: previous implicit declaration of 'UART_con' with type 'void()'
+  108 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:392:6: warning: conflicting types for 'SPITxRx_writeIO'; have 'void()'
+  392 | void SPITxRx_writeIO()
+      |      ^~~~~~~~~~~~~~~
+../Core/Src/main.c:123:19: note: previous implicit declaration of 'SPITxRx_writeIO' with type 'void()'
+  123 |                   SPITxRx_writeIO();
+      |                   ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "T2_week9.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\T2_week9\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="T2_week9.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: T2_week9.elf
+ 
+arm-none-eabi-size  T2_week9.elf 
+arm-none-eabi-objdump -h -S T2_week9.elf  > "T2_week9.list"
+   text	   data	    bss	    dec	    hex	filename
+  22180	     16	   1880	  24076	   5e0c	T2_week9.elf
+Finished building: default.size.stdout
+ 
+Finished building: T2_week9.list
+ 
+01:28:09 **** Incremental Build of configuration Debug for project T2_week9 ****
+make -j16 all 
+arm-none-eabi-size  T2_week9.elf 
+   text	   data	    bss	    dec	    hex	filename
+  22180	     16	   1880	  24076	   5e0c	T2_week9.elf
+Finished building: default.size.stdout
+ 
+01:46:20 **** Incremental Build of configuration Debug for project T2_week9 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:108:3: warning: implicit declaration of function 'UART_con' [-Wimplicit-function-declaration]
+  108 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:123:19: warning: implicit declaration of function 'SPITxRx_writeIO'; did you mean 'SPITxRx_readIO'? [-Wimplicit-function-declaration]
+  123 |                   SPITxRx_writeIO();
+      |                   ^~~~~~~~~~~~~~~
+      |                   SPITxRx_readIO
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:360:6: warning: conflicting types for 'UART_con'; have 'void()'
+  360 | void UART_con()
+      |      ^~~~~~~~
+../Core/Src/main.c:108:3: note: previous implicit declaration of 'UART_con' with type 'void()'
+  108 |   UART_con();
+      |   ^~~~~~~~
+../Core/Src/main.c:396:6: warning: conflicting types for 'SPITxRx_writeIO'; have 'void()'
+  396 | void SPITxRx_writeIO()
+      |      ^~~~~~~~~~~~~~~
+../Core/Src/main.c:123:19: note: previous implicit declaration of 'SPITxRx_writeIO' with type 'void()'
+  123 |                   SPITxRx_writeIO();
+      |                   ^~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "T2_week9.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\bcc35\Desktop\Elec\T2_week9\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="T2_week9.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: T2_week9.elf
+ 
+arm-none-eabi-size  T2_week9.elf 
+arm-none-eabi-objdump -h -S T2_week9.elf  > "T2_week9.list"
+   text	   data	    bss	    dec	    hex	filename
+  22196	     16	   1880	  24092	   5e1c	T2_week9.elf
+Finished building: default.size.stdout
+ 
+Finished building: T2_week9.list
+ 
